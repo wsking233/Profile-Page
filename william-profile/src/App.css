@@ -13,19 +13,29 @@
   margin: 0 auto;
   padding: 0 20px;
   border-radius: 8px;
-
+  row-gap: 8px;
 }
 
-header{
-    background-color: gray;
+header, main, footer{
+    backdrop-filter: blur(3px);
+    box-shadow: 1px -1px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px -1px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px -1px 5px 0px rgba(0,0,0,0.75);
 }
+
 
 main{
     flex: 1;
-    background-color: wheat;
+
 }
 
 footer{
-    /* margin-top: auto; */
-    background-color: gray;
+    justify-content: left;
+    align-items: center;
+}
+
+.footerContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }

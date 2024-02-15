@@ -6,6 +6,14 @@ body {
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-image: url(https://bing.biturl.top/?resolution=1920&format=image&index=0&mkt=en-NZ);
+height: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+/* backdrop-filter: blur(3px); */
+
 }
 
 p{

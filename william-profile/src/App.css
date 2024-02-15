@@ -1,0 +1,31 @@
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items:center;
+    row-gap: 8px;
+}
+
+.maxContainer {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  border-radius: 8px;
+
+}
+
+header{
+    background-color: gray;
+}
+
+main{
+    flex: 1;
+    background-color: wheat;
+}
+
+footer{
+    /* margin-top: auto; */
+    background-color: gray;
+}

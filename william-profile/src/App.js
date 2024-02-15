@@ -1,18 +1,22 @@
 import React from 'react';
+import './App.css';
+import Header from './components/Header';
+import Home from './components/Homepage';
+import Footer from './components/Footer';
+
 
 function App() {
   return (
-    <div>
-      <h1>William's Profile</h1>
-      <p>Hi, I'm William. I'm learning to code and this is my profile page.</p>
-      <h2>My Hobbies</h2>
-      <ul>
-        <li>Coding</li>
-        <li>Reading</li>
-        <li>Playing the guitar</li>
-      </ul>
-      
-
+    <div className='container'>
+      <header className='maxContainer'>
+        <Header />
+        </header>
+        <main className='maxContainer'>
+          <Home />
+        </main>
+        <footer className='maxContainer'>
+          <Footer />
+          </footer>
     </div>
   );
 }

@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import Router from './Router';
 import Footer from './components/Footer';
+import { Outlet } from 'react-router-dom';
 
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
         <Header />
         </header>
         <main className='maxContainer'>
-          <Router />
+          <Outlet />
         </main>
         <footer className='maxContainer'>
           <Footer />

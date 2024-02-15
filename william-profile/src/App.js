@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Header from './components/Header';
-import Home from './components/Homepage';
+import Router from './Router';
 import Footer from './components/Footer';
 
 
@@ -12,7 +12,7 @@ function App() {
         <Header />
         </header>
         <main className='maxContainer'>
-          <Home />
+          <Router />
         </main>
         <footer className='maxContainer'>
           <Footer />

@@ -19,13 +19,13 @@
   /* background-color: aquamarine; */
 }
 
-header, main, footer{
+/* header, main, footer{ */
     /* background-color: wheat; */
     /* backdrop-filter: blur(3px);
     box-shadow: 1px -1px 5px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 1px -1px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 1px -1px 5px 0px rgba(0,0,0,0.75); */
-}
+/* } */
 
 header{
     display: flex;

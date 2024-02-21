@@ -3,7 +3,7 @@ import React from 'react';
 function Home() {
 
     return (
-        <section className='homeContainer'>
+        <section id='home' className='homeContainer'>
             <div>
                 <h1>W.W</h1>
                 <p>William Wang</p>

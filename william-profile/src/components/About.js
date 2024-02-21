@@ -2,8 +2,10 @@ import React from 'react';
 
 function About() {
     return(
-        <section className="aboutContainer">
+        <section id='about' className="aboutContainer">
            <div className="maxContainer">
+           <h3 className='scetionTitle'>About Me</h3>
+
                 <p>
                     Kia ora, my name is William. 
                     I just graduated from Auckland Universty of Technology, 

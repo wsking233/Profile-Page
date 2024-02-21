@@ -1,6 +1,4 @@
-import { Tab } from '@mui/material';
 import React from 'react';
-import { BrowserRouter, NavLink } from "react-router-dom";
 import './layout.css';
 import IconButton from '@mui/material/IconButton';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -16,12 +14,12 @@ function Header() {
         <header>
 
             <div className='headerContainer'>
-                <BrowserRouter>
-                    <a href="#">HOME</a>
+                <ul>
+                    <a href="#home">HOME</a>
                     <a href="#skillset">SKILL SET</a>
-                    <a to="#project">PROJECTS</a>
-                    <a to="#about">ABOUT ME</a>
-                </BrowserRouter>
+                    <a href="#project">PROJECTS</a>
+                    <a href="#about">ABOUT ME</a>
+                </ul>
 
                 <IconButton
                     onClick={() => handleClick("https://www.linkedin.com/in/william-wang-shuai")}

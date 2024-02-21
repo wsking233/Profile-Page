@@ -16,18 +16,19 @@ function SkillSet() {
 
     return (
         <section id="skillset" className='skillSetContainer'>
-            <div className='maxContainer skillSetContainer--inner'>
+            <div className='maxContainer innerStyle'>
                 {/* <p>
                     I am a software developer. I am passionate about technology and I am looking forward to learning more about it.
                     I am also interested in learning about web development and software development.
                     I am looking forward to learning more about these areas of study.
                 </p> */}
-                <h3>My Skills</h3>
-                <div className='skillCards'>
+                <h3 className='scetionTitle'>My Skills</h3>
 
-                    <div className='skillCardContainer'>
+                <div className='cardsHolder'>
+
+                    <div className='skillCard'>
                         <PsychologyIcon fontSize="large" />
-                        <h4>Programming Languages</h4>
+                        <h4 className='cardsTitle'>Programming Languages</h4>
                         <ul>
                             <li>Java</li>
                             <li>C#</li>
@@ -35,9 +36,9 @@ function SkillSet() {
                         </ul>
                     </div>
 
-                    <div className='skillCardContainer'>
+                    <div className='skillCard'>
                         <PsychologyIcon fontSize="large" />
-                        <h4>API Intergrations</h4>
+                        <h4 className='cardsTitle'>API Intergrations</h4>
                         <ul>
                             <li>Restful</li>
                             <li>C#</li>
@@ -45,9 +46,9 @@ function SkillSet() {
                         </ul>
                     </div>
 
-                    <div className='skillCardContainer'>
+                    <div className='skillCard'>
                         <PsychologyIcon fontSize="large" />
-                        <h4>Version Control</h4>
+                        <h4 className='cardsTitle'>Version Control</h4>
                         <ul>
                             <li>Git</li>
                             <li>Github</li>
@@ -55,9 +56,9 @@ function SkillSet() {
                         </ul>
                     </div>
 
-                    <div className='skillCardContainer'>
+                    <div className='skillCard'>
                         <PsychologyIcon fontSize="large" />
-                        <h4>Problem Solving</h4>
+                        <h4 className=''>Problem Solving</h4>
                         <ul>
                             <li>Googling</li>
                             <li>ChatGPT</li>

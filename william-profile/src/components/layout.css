@@ -1,12 +1,12 @@
 :root {
     --black: #0e0004;
     --black2: #23231a;
+    /* --black2: #23231a; */
+
     --white: #f5f5f5;
-    --text-white: #eff2f1;
+    /* --text-white: #eff2f1; */
     --header-height: 90px;
     --primary: #ffbf46;
-    /* --yellow: #de9e36; */
-
     /* --dark-yellow: #de9e36; */
 }
 
@@ -29,7 +29,6 @@ header {
     height: var(--header-height);
     background-color:  var(--black);
 }
-
 
 .headerContainer {
     display: flex;
@@ -58,14 +57,16 @@ header {
     row-gap: 8px;
 }
 
-h1 {
-    font-size: 5rem;
-    font-weight: 700;
-}
-
 .homeContainer p {
     font-size: 1.5rem;
     font-weight: 400;
+}
+
+
+/* United style */
+h1 {
+    font-size: 5rem;
+    font-weight: 700;
 }
 
 h2 {
@@ -76,29 +77,18 @@ h2 {
     margin-bottom: 18px;
 }
 
-.skillSetContainer {
-    padding: 48px 16px;
-    background-color: var(--black2);
-}
-
-.skillSetContainer--inner{
-    row-gap: 32px;
-    display: flex;
-    flex-direction: column;
-}
-
-.skillSetContainer h3 {
+.scetionTitle{
     font-size: 1.6rem;
     font-weight: 100;
     text-align: center;
 }
 
-.skillSetContainer h4 {
+.cardsTitle {
     font-size: 1.2rem;
     font-weight: 700;
 }
 
-.skillCards {
+.cardsHolder {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -106,7 +96,19 @@ h2 {
     gap: 32px;
 }
 
-.skillCardContainer {
+/* Skill page style */
+.skillSetContainer {
+    padding: 48px 16px;
+    background-color: var(--black2);
+}
+
+.innerStyle{
+    row-gap: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.skillCard {
     /* width: 100px; */
     text-align: center;
     text-wrap: wrap;
@@ -124,26 +126,39 @@ h2 {
     -moz-box-shadow: 1px -1px 5px 0px rgba(0, 0, 0, 0.75); */
 }
 
-.skillCardContainer h3{
-    font-size: 1.2rem;
-}
-
-.skillCardContainer ul{
+.skillCard ul{
     display:flex;
     flex-direction: column;
     row-gap: 4px;
 }
 
 
+/* Project page style */
 .projectContainer{
+    display: flex;
+    flex: row;
+    flex-wrap: wrap;
     padding: 32px 16px;
     background-color: var(--black);
-
 }
 
-.projectContainer h3{
-    font-size: 1.6rem;
-    font-weight: 100;
+.projectCard{
+    text-align: left;
+    text-wrap: wrap;
+    padding: 16px;
+    background-color: var(--primary);
+    border-radius: 4px;
+    flex: 1;
+    row-gap: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+
+.projectCard h5{
+    font-size: 1rem;
+    font-weight: 300;
     text-align: center;
 }
 

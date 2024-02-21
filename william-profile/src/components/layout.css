@@ -2,18 +2,23 @@
     --black: #0e0004;
     --black2: #23231a;
     --white: #f5f5f5;
+    --text-white: #eff2f1;
     --header-height: 90px;
     --yellow: #f4b942;
+    --dark-yellow: #de9e36;
 }
-body{
+
+body {
     background-color: var(--black);
     color: var(--white);
 }
-a{
+
+a {
     color: var(--white);
     text-decoration: none;
 }
-header{
+
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -23,15 +28,15 @@ header{
 }
 
 
-.headerContainer{
+.headerContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     column-gap: 26px;
-    flex:1;
+    flex: 1;
 }
 
-.homeContainer{
+.homeContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,7 +47,7 @@ header{
     padding: 180px 16px;
 }
 
-.homeContainer div{
+.homeContainer div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,24 +55,63 @@ header{
     row-gap: 8px;
 }
 
-.homeContainer h1{
+.homeContainer h1 {
     font-size: 5rem;
     font-weight: 700;
 }
 
-.homeContainer p{
+.homeContainer p {
     font-size: 1.5rem;
     font-weight: 400;
 }
 
-.homeContainer h2{
+.homeContainer h2 {
     font-size: 3rem;
     font-weight: 100;
     color: var(--yellow);
 }
 
+.skillSetContainer h2 {
+    font-size: 3rem;
+    font-weight: 100;
+    color: var(--yellow);
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.skillSetContainer h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-white);
+}
+
+
+.skillSetContainer {
+    padding: 32px 16px;
+    background-color: var(--black2);
+}
+
+.skillCards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.skillCardContainer {
+    width: 100px;
+    text-align: center;
+    text-wrap: wrap;
+    padding: 16px;
+    background-color: var(--dark-yellow);
+    border-radius: 36px;
+    box-shadow: 1px -1px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px -1px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px -1px 5px 0px rgba(0, 0, 0, 0.75);
+}
 
 .aboutContainer {
-    background-color: var(--black2);
+    background-color: var(--black);
     padding: 32px 16px;
 }

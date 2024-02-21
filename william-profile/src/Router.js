@@ -7,7 +7,7 @@ import Project from "./components/Project";
 function Router(){
     return(
         <BrowserRouter>
-            <Routes>
+            <Routes path="/" element={<Home />}>
                 <Route path="/" element={<Home />} />
                 <Route path="/project" element={<Project />} />
                 <Route path="/about" element={<About />} />

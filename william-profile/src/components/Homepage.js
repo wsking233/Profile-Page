@@ -3,18 +3,15 @@ import React from 'react';
 function Home() {
 
     return (
-        <div>
-            <h1>William's Profile</h1>
-            <p>Hi, I'm William. I'm learning to code and this is my profile page.</p>
-            <h2>My Hobbies</h2>
-            <ul>
-                <li>Coding</li>
-                <li>Reading</li>
-                <li>Playing the guitar</li>
-            </ul>
-            <hr />
-
-        </div>
+        <section className='homeContainer'>
+            <div>
+                <h1>W.W</h1>
+                <p>William Wang</p>
+            </div>
+            <div>
+                <h2>Software Developer</h2>
+            </div>
+        </section>
     );
 }
 

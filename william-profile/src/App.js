@@ -1,21 +1,21 @@
 import React from 'react';
 import './App.css';
 import Header from './components/Header';
-import Router from './Router';
 import Footer from './components/Footer';
-import { Outlet } from 'react-router-dom';
-
+import Home from './components/Homepage';
+import About from './components/About';
+import SkillSet from './components/SkillSet';
 
 function App() {
   return (
     <div className='container'>
-      <header className='maxContainer'>
         <Header />
-        </header>
-        <main className='maxContainer'>
-          <Outlet />
+        <main>
+          <Home />
+          <SkillSet />
+          <About />
         </main>
-        <footer className='maxContainer'>
+        <footer>
           <Footer />
           </footer>
     </div>

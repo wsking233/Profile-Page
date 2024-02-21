@@ -17,9 +17,10 @@ function Header() {
 
             <div className='headerContainer'>
                 <BrowserRouter>
-                    <NavLink to="/">HOME</NavLink>
-                    <NavLink to="/about">ABOUT</NavLink>
-                    <NavLink to="/project">PROJECT</NavLink>
+                    <a href="#">HOME</a>
+                    <a href="#skillset">SKILL SET</a>
+                    <a to="#project">PROJECTS</a>
+                    <a to="#about">ABOUT ME</a>
                 </BrowserRouter>
 
                 <IconButton

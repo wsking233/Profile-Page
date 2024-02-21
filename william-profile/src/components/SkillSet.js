@@ -1,6 +1,7 @@
 import React from 'react';
 import './layout.css';
 import SkillSetData from "./SkillSetData.json";
+import PsychologyIcon from '@mui/icons-material/Psychology';
 
 function SkillCard(props) {
     return (
@@ -14,42 +15,63 @@ function SkillCard(props) {
 function SkillSet() {
 
     return (
-        <section className='skillSetContainer'>
-            <div className='maxContainer'>
+        <section id="skillset" className='skillSetContainer'>
+            <div className='maxContainer skillSetContainer--inner'>
                 {/* <p>
                     I am a software developer. I am passionate about technology and I am looking forward to learning more about it.
                     I am also interested in learning about web development and software development.
                     I am looking forward to learning more about these areas of study.
                 </p> */}
-                <h2>What I Can Do</h2>
+                <h3>My Skills</h3>
                 <div className='skillCards'>
 
-                    {SkillSetData.map((skill) => {
+                    <div className='skillCardContainer'>
+                        <PsychologyIcon fontSize="large" />
+                        <h4>Programming Languages</h4>
+                        <ul>
+                            <li>Java</li>
+                            <li>C#</li>
+                            <li>C/C++</li>
+                        </ul>
+                    </div>
+
+                    <div className='skillCardContainer'>
+                        <PsychologyIcon fontSize="large" />
+                        <h4>API Intergrations</h4>
+                        <ul>
+                            <li>Restful</li>
+                            <li>C#</li>
+                            <li>C/C++</li>
+                        </ul>
+                    </div>
+
+                    <div className='skillCardContainer'>
+                        <PsychologyIcon fontSize="large" />
+                        <h4>Version Control</h4>
+                        <ul>
+                            <li>Git</li>
+                            <li>Github</li>
+                            <li>Branching</li>
+                        </ul>
+                    </div>
+
+                    <div className='skillCardContainer'>
+                        <PsychologyIcon fontSize="large" />
+                        <h4>Problem Solving</h4>
+                        <ul>
+                            <li>Googling</li>
+                            <li>ChatGPT</li>
+                            <li>Analytical Thinking</li>
+                        </ul>
+                    </div>
+
+                    {/* {SkillSetData.map((skill) => {
                         return (
                          <SkillCard key={skill.id} data={skill} />
                         );
-                    })}
+                    })} */}
 
-                    {/* {SkillCard({ title: 'Java'})}
-                    {SkillCard({ title: 'C#'})}
-                    {SkillCard({ title: 'C/C++'})}
-                    {SkillCard({ title: 'JavaScript'})}
-                    {SkillCard({ title: 'HTML'})}
-                    {SkillCard({ title: 'CSS'})}
-                    {SkillCard({ title: 'React'})}
-                    {SkillCard({ title: 'Node.js'})}
-                    {SkillCard({ title: 'Express.js'})}
-                    {SkillCard({ title: 'MongoDB'})}
-                    {SkillCard({ title: 'PHP'})}
-                    {SkillCard({ title: 'SQL'})}
-                    {SkillCard({ title: 'Git'})}
-                    {SkillCard({ title: 'Arduino'})}
-                    {SkillCard({ title: 'Unity 2D'})} */}
-                    {/* {SkillCard({ title: 'GitHub'})} */}
-                    {/* {SkillCard({ title: 'Object OriantiedP'})}
-                    {SkillCard({ title: 'Web Development' })}
-                    {SkillCard({ title: 'Software Development' })}
-                    {SkillCard({ title: 'Problem sovling' })} */}
+
                 </div>
             </div>
         </section>

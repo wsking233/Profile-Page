@@ -4,8 +4,10 @@
     --white: #f5f5f5;
     --text-white: #eff2f1;
     --header-height: 90px;
-    --yellow: #f4b942;
-    --dark-yellow: #de9e36;
+    --primary: #ffbf46;
+    /* --yellow: #de9e36; */
+
+    /* --dark-yellow: #de9e36; */
 }
 
 body {
@@ -25,6 +27,7 @@ header {
     width: 100%;
     display: flex;
     height: var(--header-height);
+    background-color:  var(--black);
 }
 
 
@@ -55,7 +58,7 @@ header {
     row-gap: 8px;
 }
 
-.homeContainer h1 {
+h1 {
     font-size: 5rem;
     font-weight: 700;
 }
@@ -65,30 +68,34 @@ header {
     font-weight: 400;
 }
 
-.homeContainer h2 {
+h2 {
     font-size: 3rem;
     font-weight: 100;
-    color: var(--yellow);
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 18px;
 }
 
-.skillSetContainer h2 {
-    font-size: 3rem;
-    font-weight: 100;
-    color: var(--yellow);
-    margin-bottom: 16px;
-    text-align: center;
+.skillSetContainer {
+    padding: 48px 16px;
+    background-color: var(--black2);
+}
+
+.skillSetContainer--inner{
+    row-gap: 32px;
+    display: flex;
+    flex-direction: column;
 }
 
 .skillSetContainer h3 {
-    font-size: 1rem;
-    font-weight: 700;
-    color: var(--text-white);
+    font-size: 1.6rem;
+    font-weight: 100;
+    text-align: center;
 }
 
-
-.skillSetContainer {
-    padding: 32px 16px;
-    background-color: var(--black2);
+.skillSetContainer h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 .skillCards {
@@ -96,22 +103,51 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 16px;
+    gap: 32px;
 }
 
 .skillCardContainer {
-    width: 100px;
+    /* width: 100px; */
     text-align: center;
     text-wrap: wrap;
     padding: 16px;
-    background-color: var(--dark-yellow);
-    border-radius: 36px;
-    box-shadow: 1px -1px 5px 0px rgba(0, 0, 0, 0.75);
+    background-color: var(--primary);
+    border-radius: 4px;
+    flex: 1;
+    row-gap: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    /* box-shadow: 1px -1px 5px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 1px -1px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 1px -1px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px -1px 5px 0px rgba(0, 0, 0, 0.75); */
+}
+
+.skillCardContainer h3{
+    font-size: 1.2rem;
+}
+
+.skillCardContainer ul{
+    display:flex;
+    flex-direction: column;
+    row-gap: 4px;
+}
+
+
+.projectContainer{
+    padding: 32px 16px;
+    background-color: var(--black);
+
+}
+
+.projectContainer h3{
+    font-size: 1.6rem;
+    font-weight: 100;
+    text-align: center;
 }
 
 .aboutContainer {
-    background-color: var(--black);
+    background-color: var(--black2);
     padding: 32px 16px;
 }

@@ -1,12 +1,14 @@
 import React from 'react';
 
 function Project() {
-    return(
-        <div>
-            <h2>Project</h2>
-            <p>
-                This is a project page.
-            </p>
+    return (
+        <div className='projectContainer'>
+            <div className='maxContainer'>
+                <h3>Project</h3>
+                <p>
+                    This is a project page.
+                </p>
+            </div>
         </div>
     );
 }

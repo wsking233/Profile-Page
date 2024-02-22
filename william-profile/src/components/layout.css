@@ -25,20 +25,30 @@ header {
     background-color:  var(--black);
 }
 
+
 ul a{
     cursor: pointer;
     color: var(--white);
     text-decoration: none;
+    line-height: 2;
+    transition: 0.15s;
+    border: 2px solid transparent;
 }
 
 ul a:hover{
+
     border-bottom: 2px solid var(--primary);
 }
 
 header img{
     /* width: 100%; */
-    max-width: var(--header-height);
+    width: var(--header-height);
     padding: 28px;
+}
+
+.placeHolder {
+    height: var(--header-height);
+    visibility: hidden;
 }
 
 .headerContainer {
@@ -216,6 +226,7 @@ h2 {
     column-gap: 26px;
     padding: 16px;
     background-color: var(--black);
+
 }
 
 .footerLeft {
@@ -227,9 +238,10 @@ h2 {
 
 .footerRight {
     display: flex;
-    flex-direction: column;
-    row-gap: 8px;
+    flex-direction: row;
+    gap: 16px;
     text-align: left;
+    align-items: center;
 }
 
 .footerLeft img{
@@ -245,6 +257,24 @@ h2 {
     padding: 16px;
 }
 
-.buttom {
+.bottom {
     padding: 24px;
+}
+
+@media screen and (max-width: 490px){
+    .headerLogo{
+        display: none;
+    }
+    .placeHolder{
+        display: none;
+    }
+    .footerContainer{
+        row-gap: 16px;
+    }
+    .footerRight{
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        text-align: left;
+    }
 }

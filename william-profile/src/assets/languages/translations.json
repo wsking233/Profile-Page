@@ -1,0 +1,21 @@
+{
+  "en": {
+    "home": "HOME",
+    "skills": "SKILLS",
+    "projects": "PROJECTS",
+    "about": "ABOUT",
+
+    "software_developer": "Software Developer",
+    "my_skills": "My Skills",
+    "my_projects": "My Projects",
+    "welcome_message": "Welcome to our website!",
+    "about_me": "About Me",
+    "about_me_content": "I am a software developer with a passion for creating innovative solutions. I have experience in web development, mobile app development, and software engineering. I am always looking for new challenges and opportunities to learn and grow.",
+    "contact_me": "Contact Me"
+  },
+  "zh": {
+    "welcome_message": "欢迎访问我们的网站！",
+    "about_me": "关于我",
+    "contact_me": "联系我"
+  }
+}

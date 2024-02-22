@@ -1,6 +1,6 @@
 import React from 'react';
 import './layout.css';
-import WW from '../assets/W.W-White.png';
+import WW from '../assets/images/W.W-White.png';
 import { Link } from 'react-scroll';
 
 
@@ -9,8 +9,8 @@ function Header() {
     return (
         <header>
 
-            <div>
-                <img src={WW} alt="W.W" />
+            <div className="headerLogo">
+                <img src={WW} alt="W.W"/>
             </div>
             <div className='headerContainer'>
                 <ul>
@@ -56,6 +56,9 @@ function Header() {
                     {/* <a href="#project">PROJECTS</a> */}
                     {/* <a href="#about">ABOUT ME</a> */}
                 </ul>
+            </div>
+            <div className="placeHolder">
+                <img src={WW} alt="W.W"/>
             </div>
         </header>
     );

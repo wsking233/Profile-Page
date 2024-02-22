@@ -93,6 +93,12 @@ header img{
     font-weight: 400;
 }
 
+.headerLanguage{
+
+    /* margin: auto 0; */
+    padding: 20px;
+}
+
 
 /* United style */
 h1 {

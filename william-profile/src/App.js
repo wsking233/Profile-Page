@@ -6,9 +6,12 @@ import Home from './components/Home';
 import About from './components/About';
 import SkillSet from './components/SkillSet';
 import Project from './components/Project';
+import { LanguageProvider } from './components/LanguageContext';
+
 
 function App() {
   return (
+    <LanguageProvider>
     <div className='container'>
       <Header />
       <main>
@@ -19,6 +22,8 @@ function App() {
       </main>
       <Footer />
     </div>
+    </LanguageProvider>
+
   );
 }
 

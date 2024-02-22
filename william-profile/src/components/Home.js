@@ -1,8 +1,12 @@
 import React from 'react';
 import LOGO from '../assets/images/W.W-White.png';
 import translations from '../assets/languages/translations.json';
+import { useLanguage } from './LanguageContext';
+
 
 function Home() {
+
+    const { language } = useLanguage();
 
     return (
         <section id='home' className='homeContainer'>
@@ -12,7 +16,7 @@ function Home() {
                 <p>William Wang</p> */}
             </div>
             <div>
-                <h2>{translations["en"].software_developer}</h2>
+                <h2>{translations[language].software_developer}</h2>
 
                 {/* <p style={{color:'white'}}>Software
                 <strong

@@ -6,7 +6,7 @@
     "projects": "PROJECTS",
     "about": "ABOUT",
     
-    "software_developer": "Software Developer",
+    "software_developer": "A Software Developer",
     
 
     "my_skills": "My Skills",
@@ -15,7 +15,7 @@
     
     "about_me": "About Me",
     "about_me_content": "I am a new graduate from Auckland University of Technology. I have experience in Java Development, Web Development and Arduino Development. I reckon the tech industry is always evolving as such I'm always willing to learn and improve my skills. I'm motivated to face challenges and solve difficulties.",
-    
+    "updating": "Thanks for your visiting, this project will continuously updating...",
     
     "contact_me": "Contact Me",
     "email": "Email",
@@ -25,10 +25,10 @@
   "zh": {
     "home": "主页",
     "skills": "技术栈",
-    "projects": "项目",
+    "projects": "项目经历",
     "about": "关于我",
     
-    "software_developer": "软件民工",
+    "software_developer": "一个软件开发新人",
     
 
     "my_skills": "我的技能",
@@ -37,11 +37,12 @@
     
     "about_me": "关于我",
     "about_me_content": "I am a software developer with a passion for creating innovative solutions. I have experience in web development, mobile app development, and software engineering. I am always looking for new challenges and opportunities to learn and grow.",
-    
+    "updating": "感谢您的关注，我的项目任在持续更新中...",
+
     
     "contact_me": "联系方式",
     "email": "邮箱",
     "location": "奥克兰, 新西兰",
-    "use_permission":"UI设计已获取授权使用。"
+    "use_permission":"UI设计已获授权使用。"
   }
 }

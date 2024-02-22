@@ -4,9 +4,13 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LOGO from '../assets/images/W.W-White.png';
 import translations from '../assets/languages/translations.json';
+import { useLanguage } from './LanguageContext';
+
 
 
 function Footer() {
+    
+    const { language } = useLanguage();
 
     const handleClick = (url) => {
         window.open(url, "_blank");
@@ -29,16 +33,16 @@ function Footer() {
 
                             <div className="contactInfo">
 
-                                <h3>{translations["en"].contact_me}</h3>
-                                <p>{translations["en"].email}: wsking233@gmail.com</p>
-                                <p>{translations["en"].location}</p>
+                                <h3>{translations[language].contact_me}</h3>
+                                <p>{translations[language].email}: wsking233@gmail.com</p>
+                                <p>{translations[language].location}</p>
                                 <hr />
                                 <p>
                                 UI Designed by {' '}
                                 <a href="https://www.behance.net/gallery/128820167/Python-Developer-Website-Design" target="_blank" rel="noreferrer">
                                 Muhammad Munaf</a>
                                 </p>
-                                <p>{translations["en"].use_permission}</p>
+                                <p>{translations[language].use_permission}</p>
                             </div>
 
                             <div className="contactIcon">

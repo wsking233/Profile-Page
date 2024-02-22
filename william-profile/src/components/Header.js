@@ -1,17 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './layout.css';
 import WW from '../assets/images/W.W-White.png';
 import { Link } from 'react-scroll';
 import translations from '../assets/languages/translations.json';
+import { FormControl, MenuItem, Select } from '@mui/material';
+import { useLanguage } from './LanguageContext';
 
 
 function Header() {
+
+    const { language, setLanguage } = useLanguage();
+
+    const handleChangeLanguage = (e) => {
+        setLanguage(e.target.value);
+    };
+
 
     return (
         <header>
 
             <div className="headerLogo">
-                <img src={WW} alt="W.W"/>
+                <img src={WW} alt="W.W" />
             </div>
             <div className='headerContainer'>
                 <ul>
@@ -22,7 +31,7 @@ function Header() {
                         smooth={true}
                         offset={-100}
                         duration={500}
-                    >{translations["en"].home}</Link>
+                    >{translations[language].home}</Link>
 
                     <Link
                         activeClass='active'
@@ -31,7 +40,7 @@ function Header() {
                         smooth={true}
                         offset={-100}
                         duration={500}
-                    >{translations["en"].skills}</Link>
+                    >{translations[language].skills}</Link>
 
                     <Link
                         activeClass='active'
@@ -40,7 +49,7 @@ function Header() {
                         smooth={true}
                         offset={-100}
                         duration={500}
-                    >{translations["en"].projects}</Link>
+                    >{translations[language].projects}</Link>
 
                     <Link
                         activeClass='active'
@@ -49,18 +58,27 @@ function Header() {
                         smooth={true}
                         offset={-100}
                         duration={500}
-                    >{translations["en"].about}</Link>
+                    >{translations[language].about}</Link>
 
-
-                    {/* <a href="#home">HOME</a> */}
-                    {/* <a href="#skillset">SKILL SET</a> */}
-                    {/* <a href="#project">PROJECTS</a> */}
-                    {/* <a href="#about">ABOUT ME</a> */}
                 </ul>
             </div>
-            <div className="placeHolder">
-                <img src={WW} alt="W.W LOGO"/>
+            <div className="headerLanguage">
+                <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
+                    <Select
+                        value={language}
+                        color='primary'
+                        sx={{ bgcolor: 'white' }}
+                        onChange={handleChangeLanguage}
+                    >
+                        <MenuItem value="en" >English</MenuItem>
+                        <MenuItem value="zh" >中文</MenuItem>
+                    </Select>
+                </FormControl>
             </div>
+
+            {/* <div className="placeHolder">
+                <img src={WW} alt="W.W LOGO" />
+            </div> */}
         </header>
     );
 }

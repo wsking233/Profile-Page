@@ -5,7 +5,7 @@
 
     --white: #f5f5f5;
     /* --text-white: #eff2f1; */
-    --header-height: 90px;
+    --header-height: 100px;
     --primary: #ffbf46;
     /* --dark-yellow: #de9e36; */
 }
@@ -62,7 +62,7 @@ header img{
     row-gap: 32px;
     padding: 20px;
     margin-top: var(--header-height);
-    padding: 180px 16px;
+    padding: 200px 16px;
 }
 
 .homeContainer div {
@@ -229,6 +229,8 @@ h2 {
 
 .footerLeft img{
     padding: 26px;
+    padding-left: 0;
+    margin-left: 0;
     width: 150px;
 }
 

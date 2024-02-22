@@ -1,9 +1,6 @@
 import React from 'react';
 import Avatar from '../assets/Avatar.jpg';
-import IconButton from '@mui/material/IconButton';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import EmailIcon from '@mui/icons-material/Email';
+
 
 function About() {
 
@@ -22,29 +19,6 @@ function About() {
                         <img src={Avatar} alt="William Wang" />
                         <h4>王帅</h4>
                         <h4>William Wang</h4>
-
-                        {/* <div>
-                            <IconButton
-                                onClick={() => handleClick("mailto:wsking233@gmail.com")}
-                                // color="primary"
-                                sx={{ color: 'white' }}
-
-                            ><EmailIcon target="_blank" /></IconButton>
-
-                            <IconButton
-                                onClick={() => handleClick("https://www.linkedin.com/in/william-wang-shuai")}
-                                // color="secondary"
-                                sx={{ color: 'white' }}
-
-                            ><LinkedInIcon target="_blank" /></IconButton>
-
-                            <IconButton
-                                onClick={() => handleClick("https://github.com/wsking233")}
-                                // color="primary"
-                                sx={{ color: 'white' }}
-
-                            ><GitHubIcon target="_blank" /></IconButton>
-                        </div> */}
                     </div>
 
                     <div className='rightContainer'>

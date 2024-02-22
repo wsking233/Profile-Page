@@ -1,16 +1,15 @@
 import React from 'react';
 import './layout.css';
-import SkillSetData from "./SkillSetData.json";
 import PsychologyIcon from '@mui/icons-material/Psychology';
 
-function SkillCard(props) {
-    return (
-        <div className='skillCardContainer'>
-            <h3>{props.data.skill}</h3>
-            {/* <h3>{props.data.level}</h3> */}
-        </div>
-    );
-}
+// function SkillCard(props) {
+//     return (
+//         <div className='skillCardContainer'>
+//             <h3>{props.data.skill}</h3>
+//             {/* <h3>{props.data.level}</h3> */}
+//         </div>
+//     );
+// }
 
 function SkillSet() {
 

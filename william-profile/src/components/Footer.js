@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import IconButton from '@mui/material/IconButton';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -31,7 +31,7 @@ function Footer() {
 
                         <p>
                             Design idea from 
-                            <a href="https://www.behance.net/gallery/128820167/Python-Developer-Website-Design" target="_blank">   
+                            <a href="https://www.behance.net/gallery/128820167/Python-Developer-Website-Design" target="_blank" rel="noreferrer">   
                             Muhammad Munaf</a>
                         </p>
                     </div>

@@ -11,8 +11,6 @@ function Header() {
             <div>
             <img src={WW} alt="W.W" />
             </div>
-
-
             <div className='headerContainer'>
                 <ul>
                     <a href="#home">HOME</a>

@@ -33,7 +33,7 @@ function Footer() {
                                 <p>Auckland, New Zealand</p>
 
                                     <p>
-                                    Design idea from {' '}
+                                    Designed by {' '}
                                     <a href="https://www.behance.net/gallery/128820167/Python-Developer-Website-Design" target="_blank" rel="noreferrer">
                                     Muhammad Munaf</a>
                                 </p>

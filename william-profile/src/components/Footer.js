@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import IconButton from '@mui/material/IconButton';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import LOGO from '../assets/W.W-White.png';
 
 
 function Footer() {
@@ -16,8 +17,10 @@ function Footer() {
                 <div className="footerContainer">
 
                     <div className="footerLeft">
-                        <h1>W.W</h1>
-                        <p>William Wang</p>
+                        <img src={LOGO} alt="W.W" />
+
+                        {/* <h1>W.W</h1>
+                        <p>William Wang</p> */}
                     </div>
 
                     <div className="footerRight">

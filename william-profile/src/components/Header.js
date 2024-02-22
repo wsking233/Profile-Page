@@ -1,13 +1,17 @@
 import React from 'react';
 import './layout.css';
+import WW from '../assets/W.W-White.png';
 
 
 function Header() {
 
-  
-
     return (
         <header>
+
+            <div>
+            <img src={WW} alt="W.W" />
+            </div>
+
 
             <div className='headerContainer'>
                 <ul>

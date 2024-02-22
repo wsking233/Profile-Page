@@ -1,12 +1,14 @@
 import React from 'react';
+import LOGO from '../assets/W.W-White.png';
 
 function Home() {
 
     return (
         <section id='home' className='homeContainer'>
             <div>
-                <h1>W.W</h1>
-                <p>William Wang</p>
+                <img src={LOGO} alt="W.W" />
+                {/* <h1>W.W</h1>
+                <p>William Wang</p> */}
             </div>
             <div>
                 <h2>Software Developer</h2>

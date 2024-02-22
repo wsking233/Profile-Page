@@ -179,6 +179,8 @@ h2 {
     flex-wrap: wrap;
     justify-content: center;
     gap: 32px;
+    line-height: 24px;
+
     
 }
 
@@ -202,6 +204,7 @@ h2 {
 .aboutContainer {
     background-color: var(--black2);
     padding: 32px 16px;
+    line-height: 24px;
 }
 
 .topContainer {

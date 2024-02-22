@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './layout.css';
 import WW from '../assets/images/W.W-White.png';
 import { Link } from 'react-scroll';

@@ -1,29 +1,57 @@
 import React, { useEffect } from "react";
-import axios from "axios";
-import { Typography, Tab, IconButton } from "@mui/material";
+import IconButton from '@mui/material/IconButton';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
+
 function Footer() {
+
+    const handleClick = (url) => {
+        window.open(url, "_blank");
+    };
 
     return (
         <div className="footerContainer">
             <div className="maxContainer">
-                <div className="footer-left">
+                <div className="footerContainer">
 
-                    <strong>Wiliam Wang </strong><br />
-                    <strong>Email: wsking233@gmail.com</strong>
+                    <div className="footerLeft">
+                        <h1>W.W</h1>
+                        <p>William Wang</p>
+                    </div>
+
+                    <div className="footerRight">
+
+                        <h3>Contact</h3>
+                        <p>Email: wsking233@gmail.com</p>
+                        <p>Auckland, New Zealand</p>
+
+                        <p>
+                            Design idea from 
+                            <a href="https://www.behance.net/gallery/128820167/Python-Developer-Website-Design" target="_blank">   
+                            Muhammad Munaf</a>
+                        </p>
+                    </div>
+
+                    <div>
+                    <IconButton
+                                onClick={() => handleClick("https://www.linkedin.com/in/william-wang-shuai")}
+                                // color="secondary"
+                                sx={{ color: 'white' }}
+
+                            ><LinkedInIcon target="_blank" /></IconButton>
+
+                            <IconButton
+                                onClick={() => handleClick("https://github.com/wsking233")}
+                                // color="primary"
+                                sx={{ color: 'white' }}
+
+                            ><GitHubIcon target="_blank" /></IconButton>
+                    </div>
                 </div>
 
-                <div className="footer-right">
-                    <p>
-                        Design diea from <a href="https://www.behance.net/gallery/128820167/Python-Developer-Website-Design" target="_blank">                        Muhammad Munaf</a>
-                    </p>
-                </div>
-
+                
             </div>
-
-
         </div>
     );
 }

@@ -172,7 +172,57 @@ h2 {
     text-align: center;
 }
 
+
+/* About page style */
 .aboutContainer {
     background-color: var(--black2);
     padding: 32px 16px;
+}
+
+.topContainer {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+
+.leftContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 16px;
+}
+
+.leftContainer img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: row;
+    column-gap: 26px;
+    padding: 16px;
+    background-color: var(--black);
+}
+
+.footerLeft {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    text-align: center;
+}
+
+.footerRight {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    text-align: left;
+}
+
+
+.copyright {
+    background-color: var(--black2);
+    width: 100%;
 }

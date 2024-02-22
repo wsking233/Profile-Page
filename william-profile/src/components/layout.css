@@ -237,5 +237,9 @@ h2 {
 
 .copyright {
     background-color: var(--black2);
-    width: 100%;
+    padding: 16px;
+}
+
+.buttom {
+    padding: 24px;
 }

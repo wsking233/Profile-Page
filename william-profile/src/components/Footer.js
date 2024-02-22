@@ -12,32 +12,33 @@ function Footer() {
     };
 
     return (
-        <div className="footerContainer">
-            <div className="maxContainer">
-                <div className="footerContainer">
+        <footer>
+            <div className="footerContainer">
+                <div className="maxContainer">
+                    <div className="footerContainer">
 
-                    <div className="footerLeft">
-                        <img src={LOGO} alt="W.W" />
+                        <div className="footerLeft">
+                            <img src={LOGO} alt="W.W" />
 
-                        {/* <h1>W.W</h1>
+                            {/* <h1>W.W</h1>
                         <p>William Wang</p> */}
-                    </div>
+                        </div>
 
-                    <div className="footerRight">
+                        <div className="footerRight">
 
-                        <h3>Contact</h3>
-                        <p>Email: wsking233@gmail.com</p>
-                        <p>Auckland, New Zealand</p>
+                            <h3>Contact</h3>
+                            <p>Email: wsking233@gmail.com</p>
+                            <p>Auckland, New Zealand</p>
 
-                        <p>
-                            Design idea from 
-                            <a href="https://www.behance.net/gallery/128820167/Python-Developer-Website-Design" target="_blank" rel="noreferrer">   
-                            Muhammad Munaf</a>
-                        </p>
-                    </div>
+                            <p>
+                                Design idea from
+                                <a href="https://www.behance.net/gallery/128820167/Python-Developer-Website-Design" target="_blank" rel="noreferrer">
+                                    Muhammad Munaf</a>
+                            </p>
+                        </div>
 
-                    <div>
-                    <IconButton
+                        <div>
+                            <IconButton
                                 onClick={() => handleClick("https://www.linkedin.com/in/william-wang-shuai")}
                                 // color="secondary"
                                 sx={{ color: 'white' }}
@@ -50,12 +51,24 @@ function Footer() {
                                 sx={{ color: 'white' }}
 
                             ><GitHubIcon target="_blank" /></IconButton>
+                        </div>
                     </div>
-                </div>
 
-                
+
+                </div>
             </div>
-        </div>
+            
+            <div className="copyright">
+                <div className="maxContainer">
+                    <p>© 2024 William Wang</p>
+                </div>
+            </div>
+
+            <div className="buttom">
+                {}
+            </div>
+
+        </footer>
     );
 }
 

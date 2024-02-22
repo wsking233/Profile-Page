@@ -2,7 +2,7 @@ import React from 'react';
 
 function Project() {
     return (
-        <div id='project' className='projectContainer'>
+        <section id='project' className='projectContainer'>
             <div className='maxContainer innerStyle'>
                 <h3 className='scetionTitle'>Projects</h3>
 
@@ -57,7 +57,7 @@ function Project() {
                 </div>
 
             </div>
-        </div>
+        </section>
     );
 }
 

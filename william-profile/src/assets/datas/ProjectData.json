@@ -1,0 +1,52 @@
+{
+    "en": [
+        {
+            "title": "Freejoas",
+            "status": "In progress",
+            "description": "Freejoas is a mobile web app that allows users to find and share free Feijoa in their area. The app is designed to reduce food waste and help people in need. Users can post photos and descriptions of free items they find, and others can claim them.",
+            "tech": [
+                "React",
+                "Node.js",
+                "Express",
+                "MongoDB",
+                "Axios"
+            ]
+        },
+        {
+            "title": "Arcade Shooter",
+            "status": "Completed",
+            "description": "This is a simple 2D arcade shooter game. The player controls a spaceship and shoots down enemy ships. This game was a school project and created as a learning project to practice game development in Unity.",
+            "tech": [
+                "Unity 2D",
+                "C#"
+            ]
+        },
+        {
+            "title": "Flatties",
+            "status": "In progress",
+            "description": "Flatties is a web app that helps people find and share rental properties. The app is designed to make the process of finding a flatmate and a rental property easier. The system would help people arrange house viewing appointment, and provide a platform for communication between potential flatmates and landlords. The app is currently in the early stages of development and is being built as a learning project to practice full-stack web development.",
+            "tech": [
+                "React",
+                "Node.js",
+                "Express",
+                "MongoDB",
+                "Axios",
+                "Material UI"
+            ]
+        }
+    ],
+    "zh": [
+        {
+            "title": "Freejoas",
+            "description": "这里是项目描述"
+        },
+        {
+            "title": "Arcade Shooter",
+            "description": "这里是项目描述"
+        },
+        {
+            "title": "Flatties",
+            "description": "这里是项目描述"
+        }
+    ]
+}

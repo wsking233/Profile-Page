@@ -2,6 +2,7 @@ import React from 'react';
 import './layout.css';
 import WW from '../assets/images/W.W-White.png';
 import { Link } from 'react-scroll';
+import translations from '../assets/languages/translations.json';
 
 
 function Header() {
@@ -21,7 +22,7 @@ function Header() {
                         smooth={true}
                         offset={-100}
                         duration={500}
-                    >HOME</Link>
+                    >{translations["en"].home}</Link>
 
                     <Link
                         activeClass='active'
@@ -30,7 +31,7 @@ function Header() {
                         smooth={true}
                         offset={-100}
                         duration={500}
-                    >SKILLS</Link>
+                    >{translations["en"].skills}</Link>
 
                     <Link
                         activeClass='active'
@@ -39,7 +40,7 @@ function Header() {
                         smooth={true}
                         offset={-100}
                         duration={500}
-                    >PROJECTS</Link>
+                    >{translations["en"].projects}</Link>
 
                     <Link
                         activeClass='active'
@@ -48,7 +49,7 @@ function Header() {
                         smooth={true}
                         offset={-100}
                         duration={500}
-                    >ABOUT</Link>
+                    >{translations["en"].about}</Link>
 
 
                     {/* <a href="#home">HOME</a> */}
@@ -58,7 +59,7 @@ function Header() {
                 </ul>
             </div>
             <div className="placeHolder">
-                <img src={WW} alt="W.W"/>
+                <img src={WW} alt="W.W LOGO"/>
             </div>
         </header>
     );

@@ -1,21 +1,47 @@
 {
   "en": {
+
     "home": "HOME",
     "skills": "SKILLS",
     "projects": "PROJECTS",
     "about": "ABOUT",
-
+    
     "software_developer": "Software Developer",
+    
+
     "my_skills": "My Skills",
+    
     "my_projects": "My Projects",
-    "welcome_message": "Welcome to our website!",
+    
     "about_me": "About Me",
     "about_me_content": "I am a software developer with a passion for creating innovative solutions. I have experience in web development, mobile app development, and software engineering. I am always looking for new challenges and opportunities to learn and grow.",
-    "contact_me": "Contact Me"
+    
+    
+    "contact_me": "Contact Me",
+    "email": "Email",
+    "location": "Auckland, New Zealand",
+    "use_permission":"Used with permission."
   },
   "zh": {
-    "welcome_message": "欢迎访问我们的网站！",
+    "home": "主页",
+    "skills": "技术栈",
+    "projects": "项目",
+    "about": "关于我",
+    
+    "software_developer": "软件民工",
+    
+
+    "my_skills": "我的技能",
+    
+    "my_projects": "我的项目",
+    
     "about_me": "关于我",
-    "contact_me": "联系我"
+    "about_me_content": "I am a software developer with a passion for creating innovative solutions. I have experience in web development, mobile app development, and software engineering. I am always looking for new challenges and opportunities to learn and grow.",
+    
+    
+    "contact_me": "联系方式",
+    "email": "邮箱",
+    "location": "奥克兰, 新西兰",
+    "use_permission":"UI设计已获取授权使用。"
   }
 }

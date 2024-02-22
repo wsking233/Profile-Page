@@ -123,7 +123,7 @@ h2 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 32px;
 }
 
@@ -173,7 +173,18 @@ h2 {
     background-color: var(--black);
 }
 
+.projectCardsHolder{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    
+}
+
 .projectCard{
+    /* max-height: 300px; */
+    min-width: 280px;
     text-align: left;
     text-wrap: wrap;
     padding: 16px;
@@ -186,13 +197,6 @@ h2 {
     align-items: center;
     color: black;
 }
-
-.projectCard h5{
-    font-size: 1rem;
-    font-weight: 300;
-    text-align: center;
-}
-
 
 /* About page style */
 .aboutContainer {
@@ -249,6 +253,13 @@ h2 {
     padding-left: 0;
     margin-left: 0;
     width: 150px;
+}
+
+.contactInfo {
+    text-align: left;
+    row-gap: 8px;
+    line-height: 24px;
+    margin-right: 16px;
 }
 
 

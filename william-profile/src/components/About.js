@@ -4,10 +4,6 @@ import translations from '../assets/languages/translations.json';
 
 function About() {
 
-    // const handleClick = (url) => {
-    //     window.open(url, "_blank");
-    // };
-
     return (
         <section id='about' className="aboutContainer">
             <div className="maxContainer innerStyle">

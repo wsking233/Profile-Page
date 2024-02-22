@@ -1,7 +1,7 @@
 import React from 'react';
 import './layout.css';
 import WW from '../assets/W.W-White.png';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 
 function Header() {

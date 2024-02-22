@@ -15,11 +15,6 @@ body {
     color: var(--white);
 }
 
-a {
-    color: var(--white);
-    text-decoration: none;
-}
-
 header {
     position: fixed;
     top: 0;
@@ -28,6 +23,16 @@ header {
     display: flex;
     height: var(--header-height);
     background-color:  var(--black);
+}
+
+ul a{
+    cursor: pointer;
+    color: var(--white);
+    text-decoration: none;
+}
+
+ul a:hover{
+    border-bottom: 2px solid var(--primary);
 }
 
 header img{

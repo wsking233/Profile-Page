@@ -7,7 +7,7 @@ function ProjectCard(props) {
         <div className='projectCard'>
             <h4 className='cardsTitle'>{props.data.title}</h4>
             <p>{props.data.description}</p>
-            <a>Click to see detail</a>
+            {/* <a>Click to see detail</a> */}
         </div>
     );
 }

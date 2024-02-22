@@ -1,5 +1,8 @@
 import React from 'react';
 import projects from '../assets/datas/ProjectData.json';
+import translations from '../assets/languages/translations.json';
+import { useLanguage } from './LanguageContext';
+
 
 
 function ProjectCard(props) {
@@ -13,14 +16,16 @@ function ProjectCard(props) {
 }
 
 function Project() {
+    const { language } = useLanguage();
+
     return (
         <section id='project' className='projectContainer'>
             <div className='maxContainer innerStyle'>
-                <h3 className='scetionTitle'>Projects</h3>
+                <h3 className='scetionTitle'>{translations[language].my_projects}</h3>
 
                 <div className='projectCardsHolder'>
 
-                    {projects["en"].map((project, index) => {
+                    {projects[language].map((project, index) => {
                         return (
                             <ProjectCard data={project} key={index} />
                         );

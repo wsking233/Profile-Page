@@ -14,7 +14,7 @@
     "my_projects": "My Projects",
     
     "about_me": "About Me",
-    "about_me_content": "I am a new graduate from Auckland University of Technology. I have experience in Java Development, Web Development and Arduino Development. I reckon the tech industry is always evolving as such I'm always willing to learn and improve my skills. I'm motivated to face challenges and solve difficulties.",
+    "about_me_content": "I graduated from Auckland University of Technology with a focus on Software Development. I studied Java, object-oriented programming, and agile development frameworks. I also independently learned C++, Arduino, C#, and Unity 2D for game development. During university, I mentored new computer science students as a peer mentor. I believe in continuous learning and improvement, which inspired me to create this website. Let's keep progressing.",
     "updating": "Thanks for your visiting, this project will continuously updating...",
     
     "contact_me": "Contact Me",
@@ -33,11 +33,11 @@
 
     "my_skills": "我的技能",
     
-    "my_projects": "我的项目",
+    "my_projects": "项目经历",
     
     "about_me": "关于我",
-    "about_me_content": "I am a software developer with a passion for creating innovative solutions. I have experience in web development, mobile app development, and software engineering. I am always looking for new challenges and opportunities to learn and grow.",
-    "updating": "感谢您的关注，我的项目任在持续更新中...",
+    "about_me_content": "我毕业于奥克兰理工大学，主修软件开发。在大学期间深入的学习了Java和面向对象编程理论和团队开发的敏捷型开发框架。同时出于个人兴趣，我独立学习了C++ 与Arduino开发，还有使用C#和Unity 2D的游戏开发。此外，在大学期间曾任职于本学院作为Peer Mentor辅导计算机新生的编程作业。 科技行业不断的变化和升级，面对挑战、克服困难，是每一个程序员都要习惯的日常。保持积极的学习态度，不断提升自己，这是我创建这个网站的初衷。愿我们都能无限进步。",
+    "updating": "感谢您的关注，我的项目仍在持续更新中...",
 
     
     "contact_me": "联系方式",

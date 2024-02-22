@@ -1,9 +1,11 @@
 import React from 'react';
 import './layout.css';
+import SkillSetData from '../assets/datas/SkillSetData.json';
+import translations from '../assets/languages/translations.json';
+import { useLanguage } from './LanguageContext';
 import PsychologyIcon from '@mui/icons-material/Psychology';
 import CodeIcon from '@mui/icons-material/Code';
 import WebIcon from '@mui/icons-material/Web';
-import SkillSetData from '../assets/datas/SkillSetData.json';
 import CallMergeIcon from '@mui/icons-material/CallMerge';
 
 
@@ -46,10 +48,13 @@ function SkillCard(props) {
 
 function SkillSet() {
 
+    const { language } = useLanguage();
+
+
     return (
         <section id="skillset" className='skillSetContainer'>
             <div className='maxContainer innerStyle'>
-                <h3 className='scetionTitle'>My Skills</h3>
+                <h3 className='scetionTitle'>{translations[language].my_skills}</h3>
                 <div className='cardsHolder'>
                     {SkillSetData.map((skill) => {
                         return (

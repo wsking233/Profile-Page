@@ -3,7 +3,7 @@
         {
             "title": "Freejoas",
             "status": "In progress",
-            "description": "Freejoas is a mobile web app that allows users to find and share free Feijoa in their area. The app is designed to reduce food waste and help people in need. Users can post photos and descriptions of free items they find, and others can claim them.",
+            "description": "Freejoas is web app designed for mobile that allows users to find and share free feijoa in their area. Users can post photos, locations and descriptions of free feijoa they would like to share with peope, and others can claim them.",
             "tech": [
                 "React",
                 "JavaScript",
@@ -16,7 +16,7 @@
         {
             "title": "Arcade Shooter",
             "status": "Completed",
-            "description": "This is a simple 2D arcade shooter game. The player controls a spaceship and shoots down enemy ships. This game was a school project and created as a learning project to practice game development in Unity.",
+            "description": "This is a simple 2D arcade shooter game. The player controls a spaceship and shoots down enemy ships. This game was a school project and created as a learning project to practice game development in Unity and the SCRUM framework.",
             "tech": [
                 "Unity 2D",
                 "C#"
@@ -41,7 +41,7 @@
         {
             "title": "Freejoas",
             "status": "In progress",
-            "description": "Freejoas is a mobile web app that allows users to find and share free Feijoa in their area. The app is designed to reduce food waste and help people in need. Users can post photos and descriptions of free items they find, and others can claim them.",
+            "description": "Freejoas is web app designed for mobile that allows users to find and share free feijoa in their area. Users can post photos, locations and descriptions of free feijoa they would like to share with peope, and others can claim them.",
             "tech": [
                 "React",
                 "JavaScript",
@@ -54,7 +54,7 @@
         {
             "title": "Arcade Shooter",
             "status": "Completed",
-            "description": "This is a simple 2D arcade shooter game. The player controls a spaceship and shoots down enemy ships. This game was a school project and created as a learning project to practice game development in Unity.",
+            "description": "This is a simple 2D arcade shooter game. The player controls a spaceship and shoots down enemy ships. This game was a school project and created as a learning project to practice game development in Unity and SCRUM framework.",
             "tech": [
                 "Unity 2D",
                 "C#"

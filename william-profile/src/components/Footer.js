@@ -38,7 +38,7 @@ function Footer() {
                                 <p>{translations[language].location}</p>
                                 <hr />
                                 <p>
-                                UI Designed by {' '}
+                                UI Design inspiration comes from {' '}
                                 <a href="https://www.behance.net/gallery/128820167/Python-Developer-Website-Design" target="_blank" rel="noreferrer">
                                 Muhammad Munaf</a>
                                 </p>

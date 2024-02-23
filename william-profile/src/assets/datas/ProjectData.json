@@ -1,8 +1,33 @@
 {
     "en": [
         {
+            "title": "Arcade Shooter",
+            "status": "Completed",
+            "brief": "A simple 2D arcade shooting game.",
+            "description": "This is a simple 2D arcade shooting game where player takes control of a spaceship in space, tasked with shooting down enemy ships. Players can enhance their spaceship by collecting power-ups, such as increasing weapon firepower or boosting defense capabilities. Due to being a self-selected learning project undertaken during school, the overall completion level of the project is relatively low. However, valuable experience has been gained during the development process, particularly in the application of teamwork and SCRUM framework.",
+            "tech": [
+                "Unity 2D",
+                "C#"
+            ],
+            "tasks": [
+                {
+                    "id": 1,
+                    "task": "Practiced Agile development and SCRUM framework in a team."
+                },
+                {
+                    "id": 2,
+                    "task": "Designed the software architecture with OOP principles."
+                },
+                {
+                    "id": 3,
+                    "task": "Designed and developed enemy system and weapon system"
+                }
+            ]
+        },
+        {
             "title": "Freejoas",
-            "status": "In progress",
+            "status": "In Progress",
+            "brief": "An app to find the nearest Feijoa tree in your area.",
             "description": "Freejoas is a web app designed for mobile devices. It serves as a platform for users to share surplus feijoa fruits with others from the comfort of their homes. By uploading photos, locations, and detailed descriptions of the fruits, users can offer others the opportunity to pick them for free, to fostering community interaction and mutual assistance. Additionally, the project aims to incorporate entertaining elements into its design, transforming the fruit-finding process into an adventurous experience.",
             "tech": [
                 "React",
@@ -11,20 +36,26 @@
                 "Express",
                 "MongoDB",
                 "Axios"
-            ]
-        },
-        {
-            "title": "Arcade Shooter",
-            "status": "Completed",
-            "description": "This is a simple 2D arcade shooting game where player takes control of a spaceship in space, tasked with shooting down enemy ships. Players can enhance their spaceship by collecting power-ups, such as increasing weapon firepower or boosting defense capabilities. Due to being a self-selected learning project undertaken during school, the overall completion level of the project is relatively low. However, valuable experience has been gained during the development process, particularly in the application of teamwork and SCRUM framework.",
-            "tech": [
-                "Unity 2D",
-                "C#"
+            ],
+            "tasks": [
+                {
+                    "id": 1,
+                    "task": "Developing the back end of the app using Node.js and Express."
+                },
+                {
+                    "id": 2,
+                    "task": "Developing and testing API endpoints."
+                },
+                {
+                    "id": 3,
+                    "task": "Designing and developing the database with MongoDB ."
+                }
             ]
         },
         {
             "title": "Flatties",
-            "status": "In progress",
+            "status": "In Progress",
+            "brief": "A housing rental website based on the local market of New Zealand.",
             "description": "Flatties is a housing rental website based on the local market of New Zealand. The primary objective of this project is to address the shortcomings evident in mainstream rental platforms within New Zealand. It aims to assist both landlords and tenants in scheduling property viewings, providing reminders for appointments, facilitating navigation to property locations, and enabling personalized annotations for each property to aid in memory retention. Additionally, it serves as a communication platform between tenants and landlords. The overarching goal is to automate and integrate the process of property search and rental, thereby streamlining the entire experience. Presently, the project is in its nascent developmental phase, functioning as a learning endeavor in full-stack web development.",
             "tech": [
                 "React",
@@ -35,13 +66,53 @@
                 "Axios",
                 "Material UI",
                 "SCRUM"
+            ],
+            "tasks": [
+                {
+                    "id": 1,
+                    "task": "Designing the database with MongoDB and developing the back end with Node.js and Express."
+                },
+                {
+                    "id": 2,
+                    "task": "Developing and testing APIs to interact with the database and front end."
+                },
+                {
+                    "id": 3,
+                    "task": "Design the app architecture as a member of a SCRUM team."
+                }
             ]
         }
     ],
     "zh": [
         {
+            "title": "Arcade Shooter",
+            "status": "项目已结束",
+            "brief": "一款简单的 2D 街机射击游戏。",
+            "description": "这是一款简易的 2D 街机射击游戏，玩家扮演一名宇宙飞船的驾驶员，任务是击落敌方飞船。玩家可以通过收集道具来增强自己的飞船，比如获取不同的武器或者防御护盾。由于该项目是在校期间进行的自主选题学习项目，整体完成度较低，但在开发过程中积累了宝贵的经验，尤其是在团队合作和SCRUM框架的应用方面。",
+            "tech": [
+                "Unity 2D",
+                "C#",
+                "SCRUM"
+            ],
+            "tasks": [
+                {
+                    "id": 1,
+                    "task": "在团队开发中学习敏捷开发和SCRUM框架。"
+                },
+                {
+                    "id": 2,
+                    "task": "使用面向对象编程原则设计软件架构。"
+                },
+                {
+                    "id": 3,
+                    "task": "设计和开发敌人系统和武器系统。"
+                }
+            ]
+        },
+        {
             "title": "Freejoas",
             "status": "项目开发中",
+            "brief": "一款可以帮助你找到附近斐济果树的应用。",
             "description": "Freejoas 是专为移动设备设计的Web App。它提供了一个平台，让用户在家中有富余的斐济果时可以与他人共享。用户可以通过发布斐济果的照片、位置和详细描述，向其他人免费提供采摘的机会以促进社区之间的交流与互助。另外，该项目还在寻求娱乐性的设计，让寻找斐济果的过程更像是一场冒险。",
             "tech": [
                 "React",
@@ -50,21 +121,26 @@
                 "Express",
                 "MongoDB",
                 "Axios"
-            ]
-        },
-        {
-            "title": "Arcade Shooter",
-            "status": "项目已结束",
-            "description": "这是一款简易的 2D 街机射击游戏，玩家扮演一名宇宙飞船的驾驶员，任务是击落敌方飞船。玩家可以通过收集道具来增强自己的飞船，比如获取不同的武器或者防御护盾。由于该项目是在校期间进行的自主选题学习项目，整体完成度较低，但在开发过程中积累了宝贵的经验，尤其是在团队合作和SCRUM框架的应用方面。",
-            "tech": [
-                "Unity 2D",
-                "C#",
-                "SCRUM"
+            ],
+            "tasks": [
+                {
+                    "id": 1,
+                    "task": "使用 Node.js 和 Express 开发应用的后端。"
+                },
+                {
+                    "id": 2,
+                    "task": "开发和测试 API 入口。"
+                },
+                {
+                    "id": 3,
+                    "task": "使用 MongoDB 设计和开发数据库。"
+                }
             ]
         },
         {
             "title": "Flatties",
-            "status": "In progress",
+            "status": "项目开发中",
+            "brief": "一款基于新西兰本地市场的找房租房网站。",
             "description": "Flatties 是一款基于新西兰本地市场的找房租房网站。该项目的主要目标是解决新西兰本地主流租房网站存在的不足之处。其旨在协助房东和房客安排房产看房时间、提供看房提醒、导航至房产地址，并为每个房产提供个性化备注以便记忆。此外，该项目还为潜在室友和房东之间的沟通提供平台。总体目标是实现找房租房过程的自动化和一体化，从而简化整个体验。目前，该项目处于早期开发阶段，作为一个全栈 Web 开发的学习项目。",
             "tech": [
                 "React",
@@ -74,6 +150,20 @@
                 "MongoDB",
                 "Axios",
                 "Material UI"
+            ],
+            "tasks": [
+                {
+                    "id": 1,
+                    "task": "使用 Node.js 和 Express 开发应用的后端。"
+                },
+                {
+                    "id": 2,
+                    "task": "开发和测试 API 入口。"
+                },
+                {
+                    "id": 3,
+                    "task": "使用 MongoDB 设计和开发数据库。"
+                }
             ]
         }
     ]

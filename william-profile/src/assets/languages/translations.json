@@ -14,13 +14,14 @@
     "my_projects": "My Projects",
     
     "about_me": "About Me",
-    "about_me_content": "I graduated from Auckland University of Technology with a focus on Software Development. I studied Java, object-oriented programming, and agile development frameworks. I also independently learned C++, Arduino, C#, and Unity 2D for game development. During university, I mentored new computer science students as a peer mentor. I believe in continuous learning and improvement, which inspired me to create this website. Let's keep progressing.",
+    "about_me_content": "I graduated from Auckland University of Technology with a focus on Software Development. I studied Java, object-oriented programming, and agile development frameworks. I also independently learned C++, Arduino, C#, and Unity 2D for game development.",
+    "about_me_content_2": "During university, I mentored new computer science students as a peer mentor. I believe in continuous learning and improvement, which inspired me to create this website. Let's keep progressing.",
     "updating": "Thanks for your visiting, this project will continuously updating...",
     
     "contact_me": "Contact Me",
     "email": "Email",
     "location": "Auckland, New Zealand",
-    "use_permission":"Used with permission."
+    "use_permission":"Permission obtained ."
   },
   "zh": {
     "home": "主页",
@@ -43,6 +44,6 @@
     "contact_me": "联系方式",
     "email": "邮箱",
     "location": "奥克兰, 新西兰",
-    "use_permission":"UI设计已获授权使用。"
+    "use_permission":"已获得使用许可。"
   }
 }

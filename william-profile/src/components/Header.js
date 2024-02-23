@@ -75,10 +75,9 @@ function Header() {
                     </Select>
                 </FormControl>
             </div>
-
-            {/* <div className="placeHolder">
+            <div className="placeHolder">
                 <img src={WW} alt="W.W LOGO" />
-            </div> */}
+            </div>
         </header>
     );
 }

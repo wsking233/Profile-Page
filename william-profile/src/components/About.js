@@ -24,6 +24,10 @@ function About() {
                         <p>
                             {translations[language].about_me_content}
                         </p>
+                        <br />
+                        <p>
+                            {translations[language].about_me_content_2}
+                        </p>
                         <hr/>
                         <p>{translations[language].updating}</p>
 

@@ -21,19 +21,21 @@ function ProjectDetail(props) {
 
     const [modalIsOpen, setModalIsOpen] = useState(false);
 
+    let images = ImageNotFound; 
+
     // switch the project id to load the images
     switch (props.data.id) {
         case 1:
-            var images = ImageArcadeShooter;
+            images = ImageArcadeShooter;
             break;
         case 2:
-            var images = ImageFreejoas;
+            images = ImageFreejoas;
             break;
         case 3:
-            var images = ImageFlatties;
+            images = ImageFlatties;
             break;
         default:
-            var images = ImageNotFound;
+            images = ImageNotFound;
     }
 
     return (
@@ -74,7 +76,6 @@ function ProjectDetail(props) {
                     {/* <a href={props.data.github} target="_blank" rel="noreferrer">GitHub Link</a> */}
                     <h3>Tech stack:</h3>
                     <p>{props.data.tech.join(", ")} </p>
-                    <h3></h3>
                     <hr />
                     <h3>Project description</h3>
                     <p>{props.data.description}</p>

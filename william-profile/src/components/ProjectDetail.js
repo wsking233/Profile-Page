@@ -30,7 +30,12 @@ function ProjectDetail() {
                 isOpen={modalIsOpen}
                 onRequestClose={() => setModalIsOpen(false)} // close the modal by clicking outside of the modal
                 className="popupModal maxContainer"
-            // overlayClassName="custom-overlay"
+                // overlayClassName="popupOverlay"
+                style={{
+                    overlay: {
+                        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+                    },
+                }}
             >
                 <div>
                     <Carousel
@@ -47,7 +52,7 @@ function ProjectDetail() {
                             );
                         })}
                     </Carousel>
-                   
+
                 </div>
 
                 <div>
@@ -57,6 +62,7 @@ function ProjectDetail() {
                     <p>Project Details</p>
                 </div>
                 <div>
+                    <p>Click outside to close</p>
                     {/* <button onClick={() => setModalIsOpen(false)}>Close Modal</button> */}
                 </div>
             </Modal>

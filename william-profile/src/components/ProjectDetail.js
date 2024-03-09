@@ -6,7 +6,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css'; // carousel styl
 import IconButton from '@mui/material/IconButton';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
-import { ImageArcadeShooter, ImageFreejoas } from './ImageLoader';
+import { ImageArcadeShooter, ImageFreejoas, ImageFlatties, ImageNotFound } from './ImageLoader';
 
 
 
@@ -18,19 +18,22 @@ function ProjectDetail(props) {
     const handleClick = (url) => {
         window.open(url, "_blank");
     };
-    
+
     const [modalIsOpen, setModalIsOpen] = useState(false);
 
     // switch the project id to load the images
-    switch (props.data.id) { 
+    switch (props.data.id) {
         case 1:
             var images = ImageArcadeShooter;
             break;
         case 2:
             var images = ImageFreejoas;
             break;
+        case 3:
+            var images = ImageFlatties;
+            break;
         default:
-            var images = ImageArcadeShooter;
+            var images = ImageNotFound;
     }
 
     return (
@@ -82,11 +85,26 @@ function ProjectDetail(props) {
 
                     ><GitHubIcon target="_blank" /></IconButton>
                 </div>
-                <div className='buttonContainer'>
-                    <br></br>
-                    {/* <p style={{textAlign:"right"}}>Click outside to close</p> */}
-                    <button onClick={() => setModalIsOpen(false)}>Back</button>
-                </div>
+                {props.data.status === "Completed" ?
+                    <div className='buttonContainer' style={{float:"right"}}>
+                        <button style={{ float: "right" }} onClick={() => setModalIsOpen(false)}>Close</button> 
+                    </div>
+                    :
+                    <div className='buttonContainer'>
+                        <div className='note'>
+                            <h3>Note:</h3>
+                            <p >
+                                This project still in development and subject to change.<br/>
+                                The displayed images are only screenshots of the frontend part.<br/>
+                                Dummy data is used as reference.<br/>
+                                Thanks for your attention and support!
+                            </p>
+                        </div>
+                        <div>
+                            <button onClick={() => setModalIsOpen(false)}>Back</button>
+                        </div>
+                    </div>
+                }
             </Modal>
         </div>
     );

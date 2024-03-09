@@ -46,15 +46,17 @@
     background-color: var(--black2);
 }
 
-/* .carouselContainer{
-    max-height: 400px;
-} */
-
 .carouselContainer img{
     width: 100%;
     height: auto;
     border-radius: 16px;
     margin: 8px 0;
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .buttonContainer button{
@@ -68,9 +70,12 @@
     border-radius: 10px;
 }
 
-.buttonDiv{
-    display: flex;
-    justify-content: space-between;
+.buttonContainer button:hover{
+    background-color: var(--secondary);
+}
+
+.buttonContainer .note{
+    color: var(--primary);
 }
 
 .popupModal button:hover{
@@ -85,20 +90,4 @@
 .popupModal h3{
     line-height: 1.5;
     margin-top: 8px;
-}
-
-@media screen and (max-width: 490px){
-    .popupModal {
-        width: 100%;
-        min-height: 500px;
-        top: 50%; 
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: left;
-        text-wrap: wrap;
-        padding: 24px;
-        border-radius: 16px;
-        border: 3px solid var(--primary); 
-        background-color: var(--black2);
-    }
 }

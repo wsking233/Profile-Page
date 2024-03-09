@@ -1,0 +1,93 @@
+:root {
+    --black: #0e0004;
+    --black2: #252627;
+
+    --white: #f5f5f5;
+    --text-white: #eff2f1;
+    --header-height: 100px;
+    --primary: #ffbf46;
+    --secondary: #de9e36;
+}
+
+.popupContainer {
+  display: flex;
+  gap: 16px;
+}
+
+.popupContainer button {
+    background-color: var(--primary);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.popupContainer button:hover {
+    background-color: var(--secondary);
+}
+
+.popupModal {
+    position: absolute;
+    width: 100%;
+    min-height: 500px;
+    max-height: 80%;
+    overflow: auto;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    text-wrap: wrap;
+    padding: 24px;
+    border-radius: 16px;
+    border: 3px solid var(--primary); 
+    background-color: var(--black2);
+}
+
+.carouselContainer img{
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    margin: 8px 0;
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttonContainer button{
+    float: right;
+    background-color: var(--primary);
+    padding: 8px 24px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.buttonContainer button:hover{
+    background-color: var(--secondary);
+}
+
+.buttonContainer .note{
+    color: var(--primary);
+}
+
+.popupModal button:hover{
+    background-color: var(--secondary);
+}
+
+.popupModal p{
+    font-weight: 100;
+    line-height: 1.5;
+}
+
+.popupModal h3{
+    line-height: 1.5;
+    margin-top: 8px;
+}

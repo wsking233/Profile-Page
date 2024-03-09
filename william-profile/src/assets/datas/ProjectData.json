@@ -1,13 +1,18 @@
 {
     "en": [
         {
+            "id": 1,
             "title": "Arcade Shooter",
             "status": "Completed",
             "brief": "A simple 2D arcade shooting game.",
             "description": "This is a simple 2D arcade shooting game where player takes control of a spaceship in space, tasked with shooting down enemy ships. Players can enhance their spaceship by collecting power-ups, such as increasing weapon firepower or boosting defense capabilities. Due to being a self-selected learning project undertaken during school, the overall completion level of the project is relatively low. However, valuable experience has been gained during the development process, particularly in the application of teamwork and SCRUM framework.",
             "tech": [
                 "Unity 2D",
-                "C#"
+                "C#",
+                "SCRUM",
+                "OOP",
+                "Game Design",
+                "Version Control"
             ],
             "tasks": [
                 {
@@ -22,9 +27,11 @@
                     "id": 3,
                     "task": "Designed and developed enemy system and weapon system"
                 }
-            ]
+            ],
+            "github": "https://github.com/Arcade-Shooter/GameBuild"
         },
         {
+            "id": 2,
             "title": "Freejoas",
             "status": "In Progress",
             "brief": "An app to find the nearest Feijoa tree in your area.",
@@ -50,9 +57,11 @@
                     "id": 3,
                     "task": "Designing and developing the database with MongoDB ."
                 }
-            ]
+            ],
+            "github": "https://github.com/wsking233/Freejoas-backend"
         },
         {
+            "id": 3,
             "title": "Flatties",
             "status": "In Progress",
             "brief": "A housing rental website based on the local market of New Zealand.",
@@ -80,11 +89,13 @@
                     "id": 3,
                     "task": "Design the app architecture as a member of a SCRUM team."
                 }
-            ]
+            ],
+            "github": "https://github.com/Puddle-Dev/Flatties"
         }
     ],
     "zh": [
         {
+            "id": 1,
             "title": "Arcade Shooter",
             "status": "项目已结束",
             "brief": "一款简单的 2D 街机射击游戏。",
@@ -107,9 +118,11 @@
                     "id": 3,
                     "task": "设计和开发敌人系统和武器系统。"
                 }
-            ]
+            ],
+            "github": "https://github.com/Arcade-Shooter/GameBuild"
         },
         {
+            "id": 2,
             "title": "Freejoas",
             "status": "项目开发中",
             "brief": "一款可以帮助你找到附近斐济果树的应用。",
@@ -135,9 +148,11 @@
                     "id": 3,
                     "task": "使用 MongoDB 设计和开发数据库。"
                 }
-            ]
+            ],
+            "github": "https://github.com/wsking233/Freejoas-backend"
         },
         {
+            "id": 3,
             "title": "Flatties",
             "status": "项目开发中",
             "brief": "一款基于新西兰本地市场的找房租房网站。",
@@ -164,7 +179,8 @@
                     "id": 3,
                     "task": "使用 MongoDB 设计和开发数据库。"
                 }
-            ]
+            ],
+            "github": "https://github.com/Puddle-Dev/Flatties"
         }
     ]
 }

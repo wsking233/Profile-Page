@@ -20,7 +20,7 @@ function ProjectCard(props) {
                     </div>
                 </div>
                 <p>{props.data.brief}</p>
-                <h5>Project Details</h5>
+                <h5>What I do</h5>
                 <ul>
                     {props.data.tasks.map((task) => {
                         return (
@@ -28,7 +28,7 @@ function ProjectCard(props) {
                         );
                     })}
                 </ul>
-                <p>More Details would be provided with the updating of this site</p>
+                {/* <p>More Details would be provided with the updating of this site</p> */}
                 {/* click the project card to open project detail */}
                 <ProjectDetail data={props.data} />
             </div>

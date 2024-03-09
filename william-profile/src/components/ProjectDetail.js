@@ -1,27 +1,37 @@
 import React, { useState } from 'react';
-import SpaceWar from '../assets/images/SpaceWar.jpg';
 import Modal from 'react-modal';
 import './ProjectDetail.css';
 import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // carousel style
+import IconButton from '@mui/material/IconButton';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
-import image1 from '../assets/images/spacewar/Picture1.png';
-import image2 from '../assets/images/spacewar/Picture2.png';
-import image3 from '../assets/images/spacewar/Picture3.png';
-import image4 from '../assets/images/spacewar/Picture4.png';
+import { ImageArcadeShooter, ImageFreejoas } from './ImageLoader';
 
-Modal.setAppElement('#root');
 
-const images = [
-    image1,
-    image2,
-    image3,
-    image4,
-];
 
-function ProjectDetail() {
+function ProjectDetail(props) {
+    //to fix the error of "Warning: react-modal: App element is not defined. 
+    //Please use `Modal.setAppElement(el)` or set `appElement={el}`."
+    Modal.setAppElement('#root');   //use the root element as the app element
 
+    const handleClick = (url) => {
+        window.open(url, "_blank");
+    };
+    
     const [modalIsOpen, setModalIsOpen] = useState(false);
+
+    // switch the project id to load the images
+    switch (props.data.id) { 
+        case 1:
+            var images = ImageArcadeShooter;
+            break;
+        case 2:
+            var images = ImageFreejoas;
+            break;
+        default:
+            var images = ImageArcadeShooter;
+    }
 
     return (
         <div className='popupContainer'>
@@ -30,7 +40,6 @@ function ProjectDetail() {
                 isOpen={modalIsOpen}
                 onRequestClose={() => setModalIsOpen(false)} // close the modal by clicking outside of the modal
                 className="popupModal maxContainer"
-                // overlayClassName="popupOverlay"
                 style={{
                     overlay: {
                         backgroundColor: 'rgba(0, 0, 0, 0.5)',
@@ -38,32 +47,45 @@ function ProjectDetail() {
                 }}
             >
                 <div>
+                    <h2>{props.data.title}</h2>
                     <Carousel
-                        showArrows={true}
-                        showThumbs={false}
-                        autoPlay={true}
-                        infiniteLoop={true}
+                        className='carouselContainer'
+                        showArrows={true}   // show arrow buttons
+                        showThumbs={false}  // don't show thumbnail images
+                        autoPlay={true}    // automatically play the carousel
+                        infiniteLoop={true} // infinite loop
+                        dynamicHeight={false} // the height of the carousel is fixed
                     >
                         {images.map((image) => {
                             return (
-                                <div>
-                                    <img src={image} alt={'Image'} />
+                                <div key={image.id} style={{ height: '400px' }}>
+                                    <img src={image.image} alt='SpaceWar' style={{ objectFit: 'contain', maxHeight: '100%', maxWidth: '100%' }} />
                                 </div>
                             );
-                        })}
+                        })
+                        }
                     </Carousel>
-
                 </div>
 
                 <div>
-                    <h2>Project Name</h2>
-                    <p>Modal Body</p>
-                    <h3>Skill: Node.js Express MongoDB </h3>
-                    <p>Project Details</p>
+                    {/* <a href={props.data.github} target="_blank" rel="noreferrer">GitHub Link</a> */}
+                    <h3>Tech stack:</h3>
+                    <p>{props.data.tech.join(", ")} </p>
+                    <h3></h3>
+                    <hr />
+                    <h3>Project description</h3>
+                    <p>{props.data.description}</p>
+                    <IconButton
+                        onClick={() => handleClick(props.data.github)}
+                        // color="primary"
+                        sx={{ color: 'white' }}
+
+                    ><GitHubIcon target="_blank" /></IconButton>
                 </div>
-                <div>
-                    <p>Click outside to close</p>
-                    {/* <button onClick={() => setModalIsOpen(false)}>Close Modal</button> */}
+                <div className='buttonContainer'>
+                    <br></br>
+                    {/* <p style={{textAlign:"right"}}>Click outside to close</p> */}
+                    <button onClick={() => setModalIsOpen(false)}>Back</button>
                 </div>
             </Modal>
         </div>

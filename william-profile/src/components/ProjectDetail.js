@@ -1,27 +1,58 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import SpaceWar from '../assets/images/SpaceWar.jpg';
 import Modal from 'react-modal';
 import './ProjectDetail.css';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+
+import image1 from '../assets/images/spacewar/Picture1.png';
+import image2 from '../assets/images/spacewar/Picture2.png';
+import image3 from '../assets/images/spacewar/Picture3.png';
+import image4 from '../assets/images/spacewar/Picture4.png';
 
 Modal.setAppElement('#root');
 
-function ProjectDetail(props) {
+const images = [
+    image1,
+    image2,
+    image3,
+    image4,
+];
+
+function ProjectDetail() {
 
     const [modalIsOpen, setModalIsOpen] = useState(false);
 
     return (
-        <div className='popupContainer'> 
+        <div className='popupContainer'>
             <button className='popupButton' onClick={() => setModalIsOpen(true)}>Click to see more</button>
-            <Modal 
-                isOpen={modalIsOpen} 
+            <Modal
+                isOpen={modalIsOpen}
                 onRequestClose={() => setModalIsOpen(false)} // close the modal by clicking outside of the modal
                 className="popupModal maxContainer"
-                // overlayClassName="custom-overlay"
-                >   
-                    <img src={SpaceWar}></img>
+            // overlayClassName="custom-overlay"
+            >
                 <div>
-                <h2>Project Name</h2>
-                <p>Modal Body</p>
+                    <Carousel
+                        showArrows={true}
+                        showThumbs={false}
+                        autoPlay={true}
+                        infiniteLoop={true}
+                    >
+                        {images.map((image) => {
+                            return (
+                                <div>
+                                    <img src={image} alt={'Image'} />
+                                </div>
+                            );
+                        })}
+                    </Carousel>
+                   
+                </div>
+
+                <div>
+                    <h2>Project Name</h2>
+                    <p>Modal Body</p>
                     <h3>Skill: Node.js Express MongoDB </h3>
                     <p>Project Details</p>
                 </div>
@@ -30,16 +61,7 @@ function ProjectDetail(props) {
                 </div>
             </Modal>
         </div>
-
-        // <div className='popupContainer' >
-        //     <div className='popup-inner'>
-        //         <img src={SpaceWar}></img>
-        //         <h2>Project Nmae</h2>
-        //         <h3>Skill: Node.js Express MongoDB </h3>
-        //         <p>Project Details</p>
-        //     </div>
-        // </div>
-    ) ;
+    );
 }
 
 export default ProjectDetail;

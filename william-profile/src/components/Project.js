@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import projects from '../assets/datas/ProjectData.json';
 import translations from '../assets/languages/translations.json';
 import { useLanguage } from './LanguageContext';

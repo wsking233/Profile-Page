@@ -3,14 +3,18 @@ import Modal from 'react-modal';
 import './ProjectDetail.css';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // carousel style
-import IconButton from '@mui/material/IconButton';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
 import { ImageArcadeShooter, ImageFreejoas, ImageFlatties, ImageNotFound } from './ImageLoader';
+import PropTypes from 'prop-types';
 
 
 
 function ProjectDetail(props) {
+
+    ProjectDetail.propTypes = {
+        data: PropTypes.object.isRequired,
+    };
     //to fix the error of "Warning: react-modal: App element is not defined. 
     //Please use `Modal.setAppElement(el)` or set `appElement={el}`."
     Modal.setAppElement('#root');   //use the root element as the app element
@@ -21,7 +25,7 @@ function ProjectDetail(props) {
 
     const [modalIsOpen, setModalIsOpen] = useState(false);
 
-    let images = ImageNotFound; 
+    let images;
 
     // switch the project id to load the images
     switch (props.data.id) {
@@ -40,7 +44,7 @@ function ProjectDetail(props) {
 
     return (
         <div className='popupContainer'>
-            <button className='popupButton' onClick={() => setModalIsOpen(true)}>Click to see more</button>
+            <button className='popupButton' onClick={() => setModalIsOpen(true)}>View Project</button>
             <Modal
                 isOpen={modalIsOpen}
                 onRequestClose={() => setModalIsOpen(false)} // close the modal by clicking outside of the modal
@@ -51,8 +55,21 @@ function ProjectDetail(props) {
                     },
                 }}
             >
-                <div>
+                <div className='topButtonContainer'>
+                    <div>
+                        <button className='githubButton'
+                                onClick={() => handleClick(props.data.github)}
+                            ><GitHubIcon target="_blank" /></button>
+                    </div>
+                    <div>
                     <h2>{props.data.title}</h2>
+                    </div>
+                    <div>
+                        <button onClick={() => setModalIsOpen(false)}>Back</button>
+                    </div>
+                </div>
+
+                <div>
                     <Carousel
                         className='carouselContainer'
                         showArrows={true}   // show arrow buttons
@@ -60,6 +77,7 @@ function ProjectDetail(props) {
                         autoPlay={true}    // automatically play the carousel
                         infiniteLoop={true} // infinite loop
                         dynamicHeight={false} // the height of the carousel is fixed
+                        showStatus={false}  // don't show the status of the carousel
                     >
                         {images.map((image) => {
                             return (
@@ -72,40 +90,27 @@ function ProjectDetail(props) {
                     </Carousel>
                 </div>
 
-                <div>
-                    {/* <a href={props.data.github} target="_blank" rel="noreferrer">GitHub Link</a> */}
-                    <h3>Tech stack:</h3>
-                    <p>{props.data.tech.join(", ")} </p>
-                    <hr />
-                    <h3>Project description</h3>
-                    <p>{props.data.description}</p>
-                    <IconButton
-                        onClick={() => handleClick(props.data.github)}
-                        // color="primary"
-                        sx={{ color: 'white' }}
-
-                    ><GitHubIcon target="_blank" /></IconButton>
+                <div className='detailContainer'>
+                    <div>
+                        <h3>Tech stack:</h3>
+                        <p>{props.data.tech.join("\n")} </p>
+                    </div>
+                    {/* <hr /> */}
+                    <div>
+                        <h3>Project description</h3>
+                        <p>{props.data.description}</p>
+                    </div>
                 </div>
-                {props.data.status === "Completed" ?
-                    <div className='buttonContainer' style={{float:"right"}}>
-                        <button style={{ float: "right" }} onClick={() => setModalIsOpen(false)}>Close</button> 
-                    </div>
-                    :
-                    <div className='buttonContainer'>
+                <div>
+                    {props.data.id === 1 ? <></> :
                         <div className='note'>
-                            <h3>Note:</h3>
-                            <p >
-                                This project still in development and subject to change.<br/>
-                                The displayed images are only screenshots of the frontend part.<br/>
-                                Dummy data is used as reference.<br/>
-                                Thanks for your attention and support!
-                            </p>
+                            <hr />
+                            <p>Note: This project is still in development and will be updated soon.</p>
+                            <p>Shown images are only front end part and from the previous version of the project.</p>
+                            <p>For the latest version, please visit the GitHub repository.</p>
                         </div>
-                        <div>
-                            <button onClick={() => setModalIsOpen(false)}>Back</button>
-                        </div>
-                    </div>
-                }
+                    }
+                </div>
             </Modal>
         </div>
     );

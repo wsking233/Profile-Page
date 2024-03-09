@@ -1,6 +1,7 @@
 {
     "en": [
-        {
+        {   
+            "id": 1,
             "title": "Arcade Shooter",
             "status": "Completed",
             "brief": "A simple 2D arcade shooting game.",
@@ -24,7 +25,8 @@
                 }
             ]
         },
-        {
+        {   
+            "id": 2,
             "title": "Freejoas",
             "status": "In Progress",
             "brief": "An app to find the nearest Feijoa tree in your area.",
@@ -52,7 +54,8 @@
                 }
             ]
         },
-        {
+        {   
+            "id": 3,
             "title": "Flatties",
             "status": "In Progress",
             "brief": "A housing rental website based on the local market of New Zealand.",
@@ -85,6 +88,7 @@
     ],
     "zh": [
         {
+            "id": 1,
             "title": "Arcade Shooter",
             "status": "项目已结束",
             "brief": "一款简单的 2D 街机射击游戏。",
@@ -109,7 +113,8 @@
                 }
             ]
         },
-        {
+        {   
+            "id": 2,
             "title": "Freejoas",
             "status": "项目开发中",
             "brief": "一款可以帮助你找到附近斐济果树的应用。",
@@ -138,6 +143,7 @@
             ]
         },
         {
+            "id": 3,
             "title": "Flatties",
             "status": "项目开发中",
             "brief": "一款基于新西兰本地市场的找房租房网站。",

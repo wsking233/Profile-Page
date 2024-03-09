@@ -1,6 +1,6 @@
 {
   "en": {
-
+    "id": "en",
     "home": "HOME",
     "skills": "SKILLS",
     "projects": "PROJECTS",
@@ -24,6 +24,7 @@
     "use_permission":"Permission obtained ."
   },
   "zh": {
+    "id": "zh",
     "home": "主页",
     "skills": "技术栈",
     "projects": "项目经历",

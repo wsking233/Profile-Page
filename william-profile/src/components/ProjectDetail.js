@@ -4,7 +4,7 @@ import './ProjectDetail.css';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // carousel style
 import GitHubIcon from '@mui/icons-material/GitHub';
-
+import CloseIcon from '@mui/icons-material/Close';
 import { ImageArcadeShooter, ImageFreejoas, ImageFlatties, ImageNotFound } from './ImageLoader';
 import PropTypes from 'prop-types';
 
@@ -18,10 +18,6 @@ function ProjectDetail(props) {
     //to fix the error of "Warning: react-modal: App element is not defined. 
     //Please use `Modal.setAppElement(el)` or set `appElement={el}`."
     Modal.setAppElement('#root');   //use the root element as the app element
-
-    const handleClick = (url) => {
-        window.open(url, "_blank");
-    };
 
     const [modalIsOpen, setModalIsOpen] = useState(false);
 
@@ -56,20 +52,31 @@ function ProjectDetail(props) {
                 }}
             >
                 <div className='topButtonContainer'>
-                    <div>
-                        <button className='githubButton'
-                                onClick={() => handleClick(props.data.github)}
-                            ><GitHubIcon target="_blank" /></button>
+                <div className='topRight'>
+                        <div>
+                                <GitHubIcon target="_blank" />
+                        </div>
+                        <div>
+                            <CloseIcon className='closeIcon'/>
+                        </div>
                     </div>
-                    <div>
-                    <h2>{props.data.title}</h2>
+                    <div className='title'>
+                        <h2>{props.data.title}</h2>
                     </div>
-                    <div>
-                        <button onClick={() => setModalIsOpen(false)}>Back</button>
+                    <div className='topLeftIcon'>
+                        <div>
+                                <a href={props.data.github} target='_blank' >
+                                <GitHubIcon target="_blank" />
+                                </a>
+                        </div>
+                        <div>
+                            <CloseIcon className='closeIcon' onClick={() => setModalIsOpen(false)} />
+                        </div>
                     </div>
                 </div>
 
                 <div>
+
                     <Carousel
                         className='carouselContainer'
                         showArrows={true}   // show arrow buttons

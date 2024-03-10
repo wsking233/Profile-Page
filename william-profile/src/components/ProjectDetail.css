@@ -80,19 +80,41 @@
     display: grid;
     grid-template-columns: 0.2fr 1fr;
     gap: 16px;
-
 }
 
 .topButtonContainer {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    align-content: center;
-    margin-bottom: 16px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
 }
 
-.topButtonContainer button{
+.title{
+    flex: 1;
+}
+
+.topLeftIcon{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.topLeftIcon a:visited, a:link, a:active, a:hover{
+   color:var(--white);
+}
+
+.closeIcon{
+    cursor: pointer;
+}
+
+.topRight{
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* .topButtonContainer button{
     background-color: var(--primary);
     padding: 8px 16px;
     margin: 8px 0;
@@ -106,4 +128,4 @@
 
 .topButtonContainer button:hover{
     background-color: var(--text-white);
-}
+} */

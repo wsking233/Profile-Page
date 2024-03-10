@@ -315,12 +315,23 @@ h2 {
         display: none;
     }
     .footerContainer{
-        row-gap: 16px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 8px;
     }
     .footerRight{
         display: flex;
         flex-direction: column;
         row-gap: 16px;
         text-align: left;
+    }
+    .headerLanguage{
+        visibility: hidden;
+    }
+    .topContainer {
+        display: flex;
+        flex-direction: column;
     }
 }

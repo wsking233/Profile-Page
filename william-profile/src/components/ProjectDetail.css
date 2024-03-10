@@ -78,8 +78,13 @@
 
 .detailContainer{
     display: grid;
-    grid-template-columns: 0.2fr 1fr;
+    grid-template-columns: 0.3fr 1fr;
     gap: 16px;
+}
+
+.techContainer{
+    border-right: 2px solid;
+    line-height: 1.3;    
 }
 
 .topButtonContainer {

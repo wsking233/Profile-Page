@@ -65,8 +65,8 @@ function ProjectDetail(props) {
                     </div>
                     <div className='topLeftIcon'>
                         <div>
-                                <a href={props.data.github} target='_blank' >
-                                <GitHubIcon target="_blank" />
+                                <a href={props.data.github} target='_blank' rel='noreferrer' >
+                                <GitHubIcon color='primary'/>
                                 </a>
                         </div>
                         <div>
@@ -98,11 +98,14 @@ function ProjectDetail(props) {
                 </div>
 
                 <div className='detailContainer'>
-                    <div>
+                    <div className='techContainer'>
                         <h3>Tech stack:</h3>
-                        <p>{props.data.tech.join("\n")} </p>
+                        {props.data.tech.map((item, index) => {
+                            return (
+                                <li key={index}>{item}</li>
+                            );
+                        })}
                     </div>
-                    {/* <hr /> */}
                     <div>
                         <h3>Project description</h3>
                         <p>{props.data.description}</p>

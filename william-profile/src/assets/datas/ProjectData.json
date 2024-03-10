@@ -7,10 +7,10 @@
             "brief": "A simple 2D arcade shooting game.",
             "description": "This is a simple 2D arcade shooting game where player takes control of a spaceship in space, tasked with shooting down enemy ships. Players can enhance their spaceship by collecting power-ups, such as increasing weapon firepower or boosting defense capabilities. Due to being a self-selected learning project undertaken during school, the overall completion level of the project is relatively low. However, valuable experience has been gained during the development process, particularly in the application of teamwork and SCRUM framework.",
             "tech": [
-                "Unity 2D",
                 "C#",
-                "SCRUM",
                 "OOP",
+                "SCRUM",
+                "Unity 2D",
                 "Game Design",
                 "Version Control"
             ],
@@ -42,7 +42,11 @@
                 "Node.js",
                 "Express",
                 "MongoDB",
-                "Axios"
+                "Axios",
+                "RESTful API",
+                "Database Design",
+                "Azure DevOps",
+                "CI/CD"
             ],
             "tasks": [
                 {
@@ -69,12 +73,18 @@
             "tech": [
                 "React",
                 "TypeScript",
+                "Material UI",
                 "Node.js",
                 "Express",
-                "MongoDB",
                 "Axios",
-                "Material UI",
-                "SCRUM"
+                "MongoDB",
+                "UI Design",
+                "UX Design",
+                "Code Review",
+                "RESTful API",
+                "Unit Testing",
+                "Database Design",
+                "Version Control"
             ],
             "tasks": [
                 {

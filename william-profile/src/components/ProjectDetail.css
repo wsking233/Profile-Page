@@ -16,17 +16,19 @@
 
 .popupContainer button {
     background-color: var(--primary);
-    padding: 14px 20px;
+    padding: 8px 16px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 100%;
-    font-size: 20px;
+    font-size: 14px;
+    font-weight: 400;
     border-radius: 10px;
+    transition: 300ms;
+    overflow: hidden;
 }
 
 .popupContainer button:hover {
-    background-color: var(--secondary);
+    background-color: var(--text-white);
 }
 
 .popupModal {
@@ -34,16 +36,23 @@
     width: 100%;
     min-height: 500px;
     max-height: 80%;
-    overflow: auto;
     top: 50%; 
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: left;
     text-wrap: wrap;
     padding: 24px;
-    border-radius: 16px;
+    border-radius: 8px;
     border: 3px solid var(--primary); 
     background-color: var(--black2);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: 100%;
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary) var(--black2);
+    scroll-behavior: smooth;
 }
 
 .carouselContainer img{
@@ -53,33 +62,8 @@
     margin: 8px 0;
 }
 
-.buttonContainer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.buttonContainer button{
-    float: right;
-    background-color: var(--primary);
-    padding: 8px 24px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    font-weight: 700;
-    border-radius: 10px;
-}
-
-.buttonContainer button:hover{
-    background-color: var(--secondary);
-}
-
-.buttonContainer .note{
+.note{
     color: var(--primary);
-}
-
-.popupModal button:hover{
-    background-color: var(--secondary);
 }
 
 .popupModal p{
@@ -91,3 +75,62 @@
     line-height: 1.5;
     margin-top: 8px;
 }
+
+.detailContainer{
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    gap: 16px;
+}
+
+.techContainer{
+    border-right: 2px solid;
+    line-height: 1.3;    
+}
+
+.topButtonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+}
+
+.title{
+    flex: 1;
+}
+
+.topLeftIcon{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.topLeftIcon a:visited, a:link, a:active, a:hover{
+   color:var(--white);
+}
+
+.closeIcon{
+    cursor: pointer;
+}
+
+.topRight{
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* .topButtonContainer button{
+    background-color: var(--primary);
+    padding: 8px 16px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 10px;
+    transition: 300ms;
+}
+
+.topButtonContainer button:hover{
+    background-color: var(--text-white);
+} */

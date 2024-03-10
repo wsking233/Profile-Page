@@ -1,15 +1,13 @@
 :root {
     --black: #0e0004;
     --black2: #252627;
-    /* --black2: #23231a; */
 
     --white: #f5f5f5;
-    /* --text-white: #eff2f1; */
+    --text-white: #eff2f1;
     --header-height: 100px;
     --primary: #ffbf46;
-    /* --dark-yellow: #de9e36; */
+    --secondary: #de9e36;
 }
-
 body {
     background-color: var(--black);
     color: var(--white);
@@ -41,7 +39,6 @@ ul a:hover{
 }
 
 header img{
-    /* width: 100%; */
     width: var(--header-height);
     padding: 28px;
 }
@@ -61,7 +58,6 @@ header img{
 
 
 .headerContainer ul {
-    /* font-size: 1.5rem; */
     font-weight: 700;
     display: flex;
     flex-direction: row;
@@ -77,7 +73,6 @@ header img{
     row-gap: 32px;
     padding: 20px;
     margin-top: var(--header-height);
-    padding: 200px 16px;
 }
 
 .homeContainer div {
@@ -95,7 +90,6 @@ header img{
 
 .headerLanguage{
 
-    /* margin: auto 0; */
     position: fixed;
     right: 0;
     padding: 20px;
@@ -134,7 +128,6 @@ h2 {
 }
 
 .cardsTitle {
-    /* color: var(--primary); */
     font-size: 1.2rem;
     font-weight: 700;
 }
@@ -160,7 +153,6 @@ h2 {
 }
 
 .skillCard {
-    /* width: 100px; */
     text-align: center;
     text-wrap: wrap;
     padding: 16px;
@@ -172,9 +164,6 @@ h2 {
     flex-direction: column;
     align-items: center;
     color: black;
-    /* box-shadow: 1px -1px 5px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 1px -1px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 1px -1px 5px 0px rgba(0, 0, 0, 0.75); */
 }
 
 .skillCard ul{
@@ -206,7 +195,6 @@ h2 {
 }
 
 .projectCard{
-    /* max-height: 300px; */
     min-width: 280px;
     text-align: left;
     text-wrap: wrap;

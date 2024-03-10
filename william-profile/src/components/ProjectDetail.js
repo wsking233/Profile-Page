@@ -83,7 +83,7 @@ function ProjectDetail(props) {
                         showThumbs={false}  // don't show thumbnail images
                         autoPlay={true}    // automatically play the carousel
                         infiniteLoop={true} // infinite loop
-                        dynamicHeight={false} // the height of the carousel is fixed
+                        dynamicHeight={true} // the height of the carousel is fixed
                         showStatus={false}  // don't show the status of the carousel
                     >
                         {images.map((image) => {

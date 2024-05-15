@@ -89,7 +89,7 @@ function ProjectDetail(props) {
                         {images.map((image) => {
                             return (
                                 <div key={image.id} style={{ height: '400px' }}>
-                                    <img src={image.image} alt='SpaceWar' style={{ objectFit: 'contain', maxHeight: '100%', maxWidth: '100%' }} />
+                                    <img src={image.src} alt='SpaceWar' style={{ objectFit: 'contain', maxHeight: '100%', maxWidth: '100%' }} />
                                 </div>
                             );
                         })

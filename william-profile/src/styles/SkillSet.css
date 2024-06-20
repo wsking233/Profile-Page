@@ -1,0 +1,18 @@
+.skillSetContainer {
+    padding: 48px 16px;
+    background-color: var(--background-color);
+}
+
+.cardsHolder {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+}
+
+.innerStyle{
+    row-gap: 32px;
+    display: flex;
+    flex-direction: column;
+}

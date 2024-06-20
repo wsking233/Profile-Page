@@ -1,10 +1,10 @@
 import React from 'react';
-import './layout.css';
-import WW from '../assets/images/W.W-White.png';
+import WW from '../assets/images/W.W Black.png';
 import { Link } from 'react-scroll';
 import translations from '../assets/languages/translations.json';
 import { FormControl, MenuItem, Select } from '@mui/material';
 import { useLanguage } from './LanguageContext';
+import '../styles/Header.css';
 
 
 function Header() {

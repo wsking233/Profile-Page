@@ -1,9 +1,9 @@
 import React from 'react';
-import './layout.css';
 import SkillSetData from '../assets/datas/SkillSetData.json';
 import translations from '../assets/languages/translations.json';
 import { useLanguage } from './LanguageContext';
 import SkillCard from './SkillCard';
+import '../styles/SkillSet.css';
 
 function SkillSet() {
 

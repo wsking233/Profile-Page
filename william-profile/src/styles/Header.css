@@ -1,0 +1,45 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    height: var(--header-height);
+    background-color: var(--background-color);
+}
+
+header img{
+    width: var(--header-height);
+    padding: 28px;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 26px;
+    flex: 1;
+}
+
+.headerContainer ul {
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 26px;
+}
+
+
+.headerLanguage{
+
+    position: fixed;
+    right: 0;
+    padding: 20px;
+    visibility: hidden;
+}
+
+
+.placeHolder {
+    height: var(--header-height);
+    visibility: hidden;
+}

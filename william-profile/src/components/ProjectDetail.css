@@ -1,12 +1,5 @@
 :root {
-    --black: #0e0004;
-    --black2: #252627;
-
-    --white: #f5f5f5;
-    --text-white: #eff2f1;
     --header-height: 100px;
-    --primary: #ffbf46;
-    --secondary: #de9e36;
 }
 
 .popupContainer {

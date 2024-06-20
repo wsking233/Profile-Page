@@ -3,6 +3,7 @@ import CodeIcon from '@mui/icons-material/Code';
 import WebIcon from '@mui/icons-material/Web';
 import CallMergeIcon from '@mui/icons-material/CallMerge';
 import PropTypes from 'prop-types';
+import '../styles/SkillCard.css';
 
 SkillCard.propTypes = {
     data: PropTypes.object.isRequired,

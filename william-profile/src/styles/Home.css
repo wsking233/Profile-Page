@@ -1,0 +1,24 @@
+
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 32px;
+    margin-top: var(--header-height);
+    padding: 100px 0;
+    background-color: var(--background-color2);
+}
+
+.homeContainer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 8px;
+}
+
+.homeContainer p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}

@@ -35,7 +35,7 @@
             "title": "Freejoas",
             "status": "In Progress",
             "brief": "An app to find the nearest Feijoa tree in your area.",
-            "description": "Freejoas is a web app designed for mobile devices. It serves as a platform for users to share surplus feijoa fruits with others from the comfort of their homes. By uploading photos, locations, and detailed descriptions of the fruits, users can offer others the opportunity to pick them for free, to fostering community interaction and mutual assistance. Additionally, the project aims to incorporate entertaining elements into its design, transforming the fruit-finding process into an adventurous experience.",
+            "description": "Freejoas is a website designed for mobile devices. It serves as a platform for users to share surplus feijoa fruits with others from the comfort of their homes. By uploading photos, locations, and detailed descriptions of the fruits, users can offer others the opportunity to pick them for free, to fostering community interaction and mutual assistance. Additionally, the project aims to incorporate entertaining elements into its design, transforming the fruit-finding process into an adventurous experience. For more details please vist: https://www.freejoas.com",
             "tech": [
                 "React",
                 "JavaScript",
@@ -67,7 +67,7 @@
         {
             "id": 3,
             "title": "Flatties",
-            "status": "In Progress",
+            "status": "Paused",
             "brief": "A housing rental website based on the local market of New Zealand.",
             "description": "Flatties is a housing rental website based on the local market of New Zealand. The primary objective of this project is to address the shortcomings evident in mainstream rental platforms within New Zealand. It aims to assist both landlords and tenants in scheduling property viewings, providing reminders for appointments, facilitating navigation to property locations, and enabling personalized annotations for each property to aid in memory retention. Additionally, it serves as a communication platform between tenants and landlords. The overarching goal is to automate and integrate the process of property search and rental, thereby streamlining the entire experience. Presently, the project is in its nascent developmental phase, functioning as a learning endeavor in full-stack web development.",
             "tech": [

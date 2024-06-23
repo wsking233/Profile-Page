@@ -22,12 +22,9 @@ function About() {
                     </div>
 
                     <div className='rightContainer'>
-                        <p>
-                            {translations[language].about_me_content}
-                        </p>
                         <br />
                         <p>
-                            {translations[language].about_me_content_2}
+                            {translations[language].about_me_content}
                         </p>
                         <hr/>
                         <p>{translations[language].updating}</p>

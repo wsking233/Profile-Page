@@ -3,7 +3,7 @@ import translations from '../assets/languages/translations.json';
 import { useLanguage } from './LanguageContext';
 import FreejoasCover from '../assets/images/freejoas_cover.png';
 import BoysNightCover from '../assets/images/boysnight_cover.png';
-
+import '../styles/Project.css';
 
 function Project() {
     const { language } = useLanguage();
@@ -12,8 +12,9 @@ function Project() {
         <section id='project' className='projectContainer'>
               <div className='maxContainer innerStyle'>
                  <h3 className='scetionTitle'>{translations[language].my_projects}</h3>
-
+                    <h3>Freejoas:</h3>
                     <img src={FreejoasCover} alt='Freejoas Cover' ></img>
+                    <h3>Boys Night:</h3>
                     <img src={BoysNightCover} alt='Boys Night Cover'></img>
 
                  <div className='projectCardsHolder'>

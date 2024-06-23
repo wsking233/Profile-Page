@@ -20,7 +20,9 @@ function Header() {
         <header>
 
             <div className="headerLogo">
-                <img src={WW} alt="W.W" />
+                <a href='/'>
+                    <img src={WW} alt="W.W" />
+                </a>
             </div>
             <div className='headerContainer'>
                 <ul>

@@ -1,18 +1,6 @@
 
 
 
-ul a{
-    cursor: pointer;
-    text-decoration: none;
-    line-height: 2;
-    transition: 0.15s;
-    border: 2px solid transparent;
-}
-
-ul a:hover{
-
-    border-bottom: 2px solid;
-}
 
 
 
@@ -39,16 +27,6 @@ h2 {
     font-size: 1.6rem;
     font-weight: 100;
     text-align: center;
-}
-
-.projectTitle{
-    font-size: 1.6rem;
-}
-
-.projectTitleTop{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
 
 .cardsTitle {

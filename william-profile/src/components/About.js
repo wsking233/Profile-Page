@@ -2,6 +2,7 @@ import React from 'react';
 import Avatar from '../assets/images/Avatar.jpg';
 import translations from '../assets/languages/translations.json';
 import { useLanguage } from './LanguageContext';
+import '../styles/About.css';
 
 function About() {
 

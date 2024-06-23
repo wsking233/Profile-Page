@@ -17,7 +17,7 @@
 }
 
 .maxContainer {
-  max-width: 760px;
+  max-width: 960px;
   Width: 100%;
   margin: 0 auto
 }
@@ -51,4 +51,33 @@ h2 {
     font-size: 1.6rem;
     font-weight: 100;
     text-align: center;
+}
+
+@media screen and (max-width: 490px){
+    .headerLogo{
+        display: none;
+    }
+    .placeHolder{
+        display: none;
+    }
+    .footerContainer{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 8px;
+    }
+    .footerRight{
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        text-align: left;
+    }
+    .headerLanguage{
+        visibility: hidden;
+    }
+    .topContainer {
+        display: flex;
+        flex-direction: column;
+    }
 }

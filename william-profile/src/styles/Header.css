@@ -5,7 +5,7 @@ header {
     width: 100%;
     display: flex;
     height: var(--header-height);
-    background-color: var(--background-color);
+    background-color: var(--background-color2);
 }
 
 header img{
@@ -42,4 +42,17 @@ header img{
 .placeHolder {
     height: var(--header-height);
     visibility: hidden;
+}
+
+ul a{
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 2;
+    transition: 0.15s;
+    border: 2px solid transparent;
+}
+
+ul a:hover{
+
+    border-bottom: 2px solid;
 }

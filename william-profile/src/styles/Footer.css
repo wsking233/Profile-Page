@@ -1,0 +1,61 @@
+footer{
+    background-color: var(--background-color2);
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: row;
+    column-gap: 26px;
+    padding: 16px;
+}
+
+.footerLeft {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    text-align: center;
+}
+
+.footerRight {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    text-align: left;
+    align-items: center;
+}
+
+.footerLeft img{
+    padding: 26px;
+    padding-left: 0;
+    margin-left: 0;
+    width: 150px;
+}
+
+.contactInfo {
+    text-align: left;
+    row-gap: 8px;
+    line-height: 24px;
+    margin-right: 16px;
+}
+
+.contactInfo a{
+    text-decoration: none;
+}
+
+.contactIcon {
+    /* color: var(--primary); */
+}
+
+.copyright {
+    padding: 16px;
+}
+
+.copyright p{
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--text-color);
+}
+
+.bottom {
+    padding: 24px;
+}

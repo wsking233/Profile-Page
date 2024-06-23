@@ -13,13 +13,13 @@ function Project() {
               <div className='maxContainer innerStyle'>
                  <h3 className='scetionTitle'>{translations[language].my_projects}</h3>
                     <h3>Freejoas:</h3>
-                    <img src={FreejoasCover} alt='Freejoas Cover' ></img>
+                    <a href='/freejoas'>
+                        <img src={FreejoasCover} alt='Freejoas Cover' ></img>
+                    </a>
                     <h3>Boys Night:</h3>
-                    <img src={BoysNightCover} alt='Boys Night Cover'></img>
-
-                 <div className='projectCardsHolder'>
-                  
-                </div>
+                    <a href='/boysnight'>
+                        <img src={BoysNightCover} alt='Boys Night Cover'></img>
+                    </a>
             </div>
 
         </section>

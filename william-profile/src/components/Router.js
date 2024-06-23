@@ -1,8 +1,8 @@
 import React from 'react';
 import {Route, Routes } from 'react-router-dom';
-import Main from './Pages/Main';
-import FreejoasPage from './Pages/FreejoasPage';
-import BoysNightPage from './Pages/BoysNightPage';
+import Main from './Main';
+import FreejoasPage from './Projects/Freejoas/FreejoasPage';
+import BoysNightPage from './Projects/BoysNight/BoysNightPage';
 
 function Router() {
     return (

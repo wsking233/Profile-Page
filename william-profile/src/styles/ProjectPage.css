@@ -1,0 +1,64 @@
+.projectContainer{
+    display: flex;
+    flex: row;
+    flex-wrap: wrap;
+    padding: 32px 16px;
+    margin-top: var(--header-height);
+    /* margin-bottom: var(--footer-height); */
+}
+
+.imgHolder{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    text-align: left;
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 16px 0;
+}
+
+h3{
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 8px 0;
+}
+
+p, li{
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.creationContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px 16px;
+    gap: 32px;
+}
+
+ .creationLeft{
+   flex:1;
+}
+
+.creationRight{
+    flex: 0.5;
+}
+
+.technicalContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 8px 16px;
+}
+
+ul{
+    padding: 0 16px;
+    list-style-type: square;
+}

@@ -1,6 +1,7 @@
 :root{
     
     --header-height: 100px;
+    --footer-height: 200px;
     --primary:#32AA27;
     --secondary:#595959;
     --text-white:#FFFFFF;
@@ -45,6 +46,11 @@ h2 {
     font-weight: 100;
     text-align: center;
     margin-bottom: 18px;
+}
+
+p{
+    font-size: 1.2rem;
+    font-weight: 400;
 }
 
 .scetionTitle{

@@ -1,5 +1,9 @@
 footer{
     background-color: var(--background-color2);
+    position: relative;
+    width: 100%;
+    bottom: 0 ;
+    /* height: var(--footer-height); */
 }
 
 .footerContainer {
@@ -42,10 +46,6 @@ footer{
     text-decoration: none;
 }
 
-.contactIcon {
-    /* color: var(--primary); */
-}
-
 .copyright {
     padding: 16px;
 }
@@ -54,8 +54,4 @@ footer{
     font-weight: 400;
     font-size: 24px;
     color: var(--text-color);
-}
-
-.bottom {
-    padding: 24px;
 }

@@ -41,37 +41,31 @@ function Footer() {
 
                         </div>
 
+                        <div className="copyright">
+                            <div className="maxContainer">
+                            <div className="contactIcon">
+                                <IconButton
+                                    onClick={() => handleClick("https://www.linkedin.com/in/william-wang-shuai")}
+                                    color="primary"
+                                    // sx={{ color: 'white' }}
+
+                                ><LinkedInIcon target="_blank" /></IconButton>
+
+                                <IconButton
+                                    onClick={() => handleClick("https://github.com/wsking233")}
+                                    color="primary"
+                                    // sx={{ color: 'white' }}
+
+                                ><GitHubIcon target="_blank" /></IconButton>
+                            </div>
+                                <p>William Wang © 2024</p>
+                            </div>
+                        </div>
                     </div>
 
 
                 </div>
             </div>
-
-            <div className="copyright">
-                <div className="maxContainer">
-                <div className="contactIcon">
-                    <IconButton
-                        onClick={() => handleClick("https://www.linkedin.com/in/william-wang-shuai")}
-                        color="primary"
-                        // sx={{ color: 'white' }}
-
-                    ><LinkedInIcon target="_blank" /></IconButton>
-
-                    <IconButton
-                        onClick={() => handleClick("https://github.com/wsking233")}
-                        color="primary"
-                        // sx={{ color: 'white' }}
-
-                    ><GitHubIcon target="_blank" /></IconButton>
-                </div>
-                    <p>William Wang © 2024</p>
-                </div>
-            </div>
-
-            <div className="bottom">
-                { }
-            </div>
-
         </footer>
     );
 }

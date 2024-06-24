@@ -43,8 +43,9 @@ function FreejoasPage() {
                     <h3>Software Architecture</h3>
                     <p>
                         Freejoas is a comprehensive full-stack web application developed using the MERN stack, offering a robust architecture to handle various functionalities smoothly.
+                        The backend and frontend are developed separately, ensuring a clear separation of concerns and promoting code reusability and maintainability.
                     </p>
-                        <h3>Frontend:</h3>
+                        <h3><a href='https://github.com/EugeneRaynerNZ/freejoas' target='_blank' rel='noreferrer'>Frontend:</a></h3>
                         <ul>
                             <li>
                                 React: The frontend is built using React, ensuring a dynamic and responsive user interface.
@@ -56,7 +57,7 @@ function FreejoasPage() {
                                 Material-UI: Used for styling, providing a consistent and modern look and feel across the application.
                             </li>
                         </ul>
-                        <h3>Backend:</h3>
+                        <h3><a href='https://github.com/wsking233/Freejoas-backend' target='_blank' rel='noreferrer'>Backend: </a></h3>
                         <ul>
                             <li>
                                 Node.js and Express.js: The backend is developed with Node.js and Express.js, ensuring a scalable and efficient server-side environment.

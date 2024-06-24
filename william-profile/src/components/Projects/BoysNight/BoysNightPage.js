@@ -66,7 +66,9 @@ function BoysNightPage() {
                         </li>
 
                     </ul>
-                    Adherence to OOP principles ensures Boys Night can expand with new game types and user features. Introducing a new game type involves creating a subclass of Game, while updating user settings is straightforward using methods in the User class.
+                    <p>
+                        Adherence to OOP principles ensures Boys Night can expand with new game types and user features. Introducing a new game type involves creating a subclass of Game, while updating user settings is straightforward using methods in the User class.
+                    </p>
                     <br />
                     <div className='featuresContainer'>
                         <div className='featuresLeft'>

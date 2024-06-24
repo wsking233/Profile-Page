@@ -1,5 +1,5 @@
 import React from 'react';
-import Avatar from '../assets/images/Avatar.jpg';
+import Avatar from '../assets/images/William.jpg';
 import translations from '../assets/languages/translations.json';
 import { useLanguage } from './LanguageContext';
 import '../styles/About.css';
@@ -22,7 +22,6 @@ function About() {
                     </div>
 
                     <div>
-                        <br />
                         <p>
                             {translations[language].about_me_content}
                         </p>

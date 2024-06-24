@@ -17,8 +17,3 @@
     align-items: center;
     row-gap: 8px;
 }
-
-.homeContainer p {
-    font-size: 1.5rem;
-    font-weight: 400;
-}

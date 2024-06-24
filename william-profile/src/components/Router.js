@@ -11,7 +11,6 @@ function Router() {
             <Route path='/home' element={<Main />} />
             <Route path='/freejoas' element={<FreejoasPage />} />
             <Route path='/boysnight' element={<BoysNightPage />} />
-
         </Routes>
     );
 }

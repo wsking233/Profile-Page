@@ -13,8 +13,6 @@ function Home() {
         <section id='home' className='homeContainer'>
             <div>
                 <img src={LOGO} alt="W.W LOGO" />
-                {/* <h1>W.W</h1>
-                <p>William Wang</p> */}
             </div>
             <div>
                 <h2>{translations[language].software_developer}</h2>

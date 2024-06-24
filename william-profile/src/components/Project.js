@@ -11,7 +11,7 @@ function Project() {
     return (
         <section id='project' className='projectContainer'>
               <div className='maxContainer innerStyle'>
-                 <h3 className='scetionTitle'>{translations[language].my_projects}</h3>
+                 <h2>{translations[language].my_projects}</h2>
                     <h3>Freejoas:</h3>
                     <a href='/freejoas'>
                         <img src={FreejoasCover} alt='Freejoas Cover' ></img>
@@ -23,22 +23,6 @@ function Project() {
             </div>
 
         </section>
-
-        // <section id='project' className='projectContainer'>
-        //     <div className='maxContainer innerStyle'>
-        //         <h3 className='scetionTitle'>{translations[language].my_projects}</h3>
-
-        //         <div className='projectCardsHolder'>
-
-        //             {projects[language].map((project) => {
-        //                 return (
-        //                     <ProjectCard key={project.id} data={project} />
-        //                     );
-        //                 }
-        //                 )}
-        //         </div>
-        //     </div>
-        // </section>
     );
 }
 

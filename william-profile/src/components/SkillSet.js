@@ -13,7 +13,7 @@ function SkillSet() {
     return (
         <section id="skillset" className='skillSetContainer'>
             <div className='maxContainer innerStyle'>
-                <h3 className='scetionTitle'>{translations[language].my_skills}</h3>
+                <h2>{translations[language].my_skills}</h2>
                 <div className='cardsHolder'>
                     {SkillSetData.map((skill) => {
                         return (

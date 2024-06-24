@@ -11,7 +11,7 @@ function About() {
     return (
         <section id='about' className="aboutContainer">
             <div className="maxContainer innerStyle">
-                <h3 className='scetionTitle'>{translations[language].about_me}</h3>
+                <h2>{translations[language].about_me}</h2>
 
                 <div className='topContainer'>
 
@@ -21,7 +21,7 @@ function About() {
                         <h4>William Wang</h4>
                     </div>
 
-                    <div className='rightContainer'>
+                    <div>
                         <br />
                         <p>
                             {translations[language].about_me_content}

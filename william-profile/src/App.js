@@ -10,15 +10,13 @@ import Router from './components/Router';
 function App() {
   return (
     <LanguageProvider>
-    <div className='container'>
-      <Header />
-      <main>
+      <div className='container'>
         <BrowserRouter>
-        <Router />
+        <Header />
+            <Router />
         </BrowserRouter>
-      </main>
-      <Footer />
-    </div>
+        <Footer />
+      </div>
     </LanguageProvider>
 
   );

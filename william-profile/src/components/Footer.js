@@ -24,9 +24,6 @@ function Footer() {
 
                         <div className="footerLeft">
                             <img src={LOGO} alt="W.W" />
-
-                            {/* <h1>W.W</h1>
-                        <p>William Wang</p> */}
                         </div>
 
                         <div className="footerRight">
@@ -47,15 +44,11 @@ function Footer() {
                                 <IconButton
                                     onClick={() => handleClick("https://www.linkedin.com/in/william-wang-shuai")}
                                     color="primary"
-                                    // sx={{ color: 'white' }}
-
                                 ><LinkedInIcon target="_blank" /></IconButton>
 
                                 <IconButton
                                     onClick={() => handleClick("https://github.com/wsking233")}
                                     color="primary"
-                                    // sx={{ color: 'white' }}
-
                                 ><GitHubIcon target="_blank" /></IconButton>
                             </div>
                                 <p>William Wang © 2024</p>

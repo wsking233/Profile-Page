@@ -104,7 +104,7 @@ function BoysNightPage() {
                 </div>
 
                 <div className='securityContainer'>
-                    <h2>Data Security</h2>
+                    <h2>Data Security and Privacy</h2>
                     <div className='securityContainer'>
                         <p>
                         Boys Night operates entirely offline, securely storing all data, including game sessions and player profiles, locally on the device. Each game session is uniquely identified by a UUID, ensuring data integrity and preventing conflicts. This offline approach prioritizes user privacy by eliminating the need for online connectivity, guaranteeing a seamless gaming experience regardless of network conditions.

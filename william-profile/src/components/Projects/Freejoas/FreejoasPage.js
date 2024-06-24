@@ -12,10 +12,6 @@ function FreejoasPage() {
                     <div className='imgHolder'>
                         <img src={FreejoaImage} alt='Freejoas Cover' ></img>
                     </div>
-                    <div>
-                        <p>Freejoas is an application used by Kiwis with plans to expand with more free fruit, and to open to overseas users too. <a href='https://www.freejoas.com'>Checkout Freejoas on your mobile phone today!</a></p>
-                    </div>
-
                 </div>
 
                 <div className='overviewContainer'>

@@ -1,0 +1,47 @@
+.projectContainer{
+    display: flex;
+    flex: row;
+    flex-wrap: wrap;
+    padding: 32px 16px;
+    margin-top: var(--header-height);
+    background-color: var(--background-color2);
+}
+
+.imageContainer{
+    margin-bottom: 32px;
+}
+
+.imgHolder{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.projectContainer ul{
+    padding: 0 48px;
+    list-style-type: square;
+}
+
+.overviewDetails, .featuresContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    justify-content: center;
+}
+
+.overviewDetailsLeft{
+    flex: 1.8;
+}
+
+.overviewDetailsRight, .featuresLeft ,.featuresRight{
+    flex: 1;
+}
+
+.technicalContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0;
+}

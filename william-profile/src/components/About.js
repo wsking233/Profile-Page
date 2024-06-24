@@ -2,6 +2,7 @@ import React from 'react';
 import Avatar from '../assets/images/Avatar.jpg';
 import translations from '../assets/languages/translations.json';
 import { useLanguage } from './LanguageContext';
+import '../styles/About.css';
 
 function About() {
 
@@ -10,7 +11,7 @@ function About() {
     return (
         <section id='about' className="aboutContainer">
             <div className="maxContainer innerStyle">
-                <h3 className='scetionTitle'>{translations[language].about_me}</h3>
+                <h2>{translations[language].about_me}</h2>
 
                 <div className='topContainer'>
 
@@ -20,13 +21,10 @@ function About() {
                         <h4>William Wang</h4>
                     </div>
 
-                    <div className='rightContainer'>
-                        <p>
-                            {translations[language].about_me_content}
-                        </p>
+                    <div>
                         <br />
                         <p>
-                            {translations[language].about_me_content_2}
+                            {translations[language].about_me_content}
                         </p>
                         <hr/>
                         <p>{translations[language].updating}</p>

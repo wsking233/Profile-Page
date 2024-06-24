@@ -2,26 +2,21 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Home from './components/Home';
-import About from './components/About';
-import SkillSet from './components/SkillSet';
-import Project from './components/Project';
 import { LanguageProvider } from './components/LanguageContext';
+import { BrowserRouter } from "react-router-dom";
 
+import Router from './components/Router';
 
 function App() {
   return (
     <LanguageProvider>
-    <div className='container'>
-      <Header />
-      <main>
-        <Home />
-        <SkillSet />
-        <Project />
-        <About />
-      </main>
-      <Footer />
-    </div>
+      <div className='container'>
+        <BrowserRouter>
+        <Header />
+            <Router />
+        </BrowserRouter>
+        <Footer />
+      </div>
     </LanguageProvider>
 
   );

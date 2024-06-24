@@ -1,9 +1,9 @@
 import React from 'react';
-import './layout.css';
 import SkillSetData from '../assets/datas/SkillSetData.json';
 import translations from '../assets/languages/translations.json';
 import { useLanguage } from './LanguageContext';
 import SkillCard from './SkillCard';
+import '../styles/SkillSet.css';
 
 function SkillSet() {
 
@@ -13,7 +13,7 @@ function SkillSet() {
     return (
         <section id="skillset" className='skillSetContainer'>
             <div className='maxContainer innerStyle'>
-                <h3 className='scetionTitle'>{translations[language].my_skills}</h3>
+                <h2>{translations[language].my_skills}</h2>
                 <div className='cardsHolder'>
                     {SkillSetData.map((skill) => {
                         return (

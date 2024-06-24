@@ -44,7 +44,6 @@ function FreejoasPage() {
                     <p>
                         Freejoas is a comprehensive full-stack web application developed using the MERN stack, offering a robust architecture to handle various functionalities smoothly.
                     </p>
-                    <p>
                         <h3>Frontend:</h3>
                         <ul>
                             <li>
@@ -78,7 +77,6 @@ function FreejoasPage() {
                                 Content Moderation System: Features a main data collection and a pending data collection, designed specifically to support content moderation. This ensures that only approved content is displayed to users.
                             </li>
                         </ul>
-                    </p>
                     <p>
                         By leveraging the strengths of the MERN stack, Freejoas delivers a performant and maintainable web application that can scale with user demands and adapt to future enhancements.
                     </p>
@@ -142,7 +140,6 @@ function FreejoasPage() {
                     <h2>Security</h2>
                     <div className='securityContainer'>
                         <h3>Authentication and Authorization</h3>
-                        <p>
                             <ul>
                                 <li>
                                 Freejoas employs JSON Web Tokens (JWT) for authentication and authorization. When a user logs in, a token is generated and sent to the client. This token is included in the headers of all subsequent requests to the server to ensure that they are authenticated.
@@ -154,7 +151,7 @@ function FreejoasPage() {
                                 Additionally, Freejoas implements a role-based access control (RBAC) system, which manages the access rights and permissions of different user roles, ensuring that users can only access resources and perform actions that are within their privileges.
                                 </li>
                             </ul>
-                        </p>
+
                         <h3>Data Protection</h3>
                         <ul>
                             <li>
@@ -173,11 +170,11 @@ function FreejoasPage() {
                     Freejoas is an ongoing project with a planned public release in January 2025, 
                     aligning with seasonal trends. You can explore our demo version now by visiting <a href='https://www.freejoas.com'>Freejoas</a>.
                      Feel free to sign up with your email or use the demo account:
+                    </p>
                         <ul>
                             <li>Email: demo@mail.com</li>
                             <li>Password: demo</li>
                         </ul>
-                    </p>
                     <p>
                     So far, Freejoas has received positive feedback from colleagues, friends, family, and potential employers. I welcome all feedback, both positive and negative, as it helps in improving the app. With a growth mindset, my goal is to ensure that Freejoas performs at its best upon release.</p>
                     <p>

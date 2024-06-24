@@ -2,18 +2,11 @@ import React, {useEffect} from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import WW from '../assets/images/W.W Black.png';
 import { Link as ScrollLink, scroller } from 'react-scroll';
-import { FormControl, MenuItem, Select } from '@mui/material';
-import { useLanguage } from './LanguageContext';
 import '../styles/Header.css';
 
 function Header() {
-    const { language, setLanguage } = useLanguage();
     const navigate = useNavigate();
     const location = useLocation();
-
-    const handleChangeLanguage = (e) => {
-        setLanguage(e.target.value);
-    };
 
     const handleNavigation = (section) => {
         location.pathname !== '/' && navigate('/', { state: { section } });
@@ -87,7 +80,7 @@ function Header() {
                 </ul>
             </div>
             <div className="headerLanguage">
-                <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
+                {/* <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
                     <Select
                         value={language}
                         color='primary'
@@ -97,7 +90,7 @@ function Header() {
                         <MenuItem value="en">English</MenuItem>
                         <MenuItem value="zh">中文</MenuItem>
                     </Select>
-                </FormControl>
+                </FormControl> */}
             </div>
             <div className="placeHolder">
                 <img src={WW} alt="W.W LOGO" />

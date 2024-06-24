@@ -3,7 +3,6 @@ import Home from "./Home";
 import About from "./About";
 import SkillSet from "./SkillSet";
 import Project from "./Project";
-import Header from "./Header";
 
 
 function Main() {

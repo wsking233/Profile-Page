@@ -142,23 +142,6 @@ function FreejoasPage() {
                     <img src={FreejoasArchitecture} alt='Freejoas Architecture'></img>
                 </div>
 
-
-                {/* <div className='implementationContainer'>
-                    <h2>Implementation Methodology</h2>
-                    <div className='implementationContainer'>
-                        <h3>Challenges</h3>
-                        <p>This is my first full-stuck web development project.</p>
-                        <p>The biggest challenge was to design and maintanace the APIs</p>
-                        <p>Email verification system</p>
-                        <p>Another challenge was to implement the map feature. I used the Google Maps API to implement the map feature. I had to learn how to use the Google Maps API and how to integrate it with the app.</p>
-                        <h3>Future Improvements</h3>
-                        <p>In the future, I plan to add more features to the app,
-                            such as a notification feature, a rating feature.
-                            And at meantime, the admin system is also in developing stage.
-                        </p>
-                    </div>
-                </div> */}
-
                 <div className='securityContainer'>
                     <h2>Security</h2>
                     <div className='securityContainer'>
@@ -176,24 +159,12 @@ function FreejoasPage() {
                                 </li>
                             </ul>
                         </p>
-                        {/* <p>
-                        Freejoas employs JSON Web Tokens (JWT) for authentication and authorization. When a user logs in, a token is generated and sent to the client. This token is included in the headers of all subsequent requests to the server to ensure that they are authenticated.
-                        </p>
-                        <p>
-                        To enhance security, Freejoas also uses Cross-Origin Resource Sharing (CORS) policies to prevent unauthorized access from different origins.
-                        </p>
-                        <p>
-                        Additionally, Freejoas implements a role-based access control (RBAC) system, which manages the access rights and permissions of different user roles, ensuring that users can only access resources and perform actions that are within their privileges.
-                        </p> */}
                         <h3>Data Protection</h3>
                         <ul>
                             <li>
                             User passwords are securely hashed before being stored in the database, using industry-standard encryption algorithms. Passwords are never included in any responses sent from the server, ensuring that sensitive information is not exposed.
                             </li>
                         </ul>
-                        {/* <p>
-                        User passwords are securely hashed before being stored in the database, using industry-standard encryption algorithms. Passwords are never included in any responses sent from the server, ensuring that sensitive information is not exposed.
-                        </p> */}
                         <p>
                         By combining JWT for secure authentication, CORS for preventing unauthorized cross-origin requests, and robust data protection practices, Freejoas ensures a high level of security for its users.
                         </p>

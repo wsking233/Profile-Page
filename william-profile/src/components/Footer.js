@@ -31,8 +31,8 @@ function Footer() {
                             <div className="contactInfo">
 
                                 <h3>{translations[language].contact_me}</h3>
-                                <p>{translations[language].email}: wsking233@gmail.com</p>
-                                <p>{translations[language].location}</p>
+                                <p style={{padding: 0}}>{translations[language].email}: wsking233@gmail.com</p>
+                                <p style={{padding: 0}}>{translations[language].location}</p>
                             </div>
 
 
@@ -51,7 +51,7 @@ function Footer() {
                                     color="primary"
                                 ><GitHubIcon target="_blank" /></IconButton>
                             </div>
-                                <p>William Wang © 2024</p>
+                                <p style={{padding: 0}}>William Wang © 2024</p>
                             </div>
                         </div>
                     </div>

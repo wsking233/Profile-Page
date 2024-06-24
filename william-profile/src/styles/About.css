@@ -23,3 +23,9 @@
     object-fit: cover;
 }
 
+@media screen and (max-width: 490px){
+    .topContainer{
+        display: flex;
+        flex-direction: column;
+    }
+}

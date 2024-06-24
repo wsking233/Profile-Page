@@ -2,7 +2,6 @@ import React, {useEffect} from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import WW from '../assets/images/W.W Black.png';
 import { Link as ScrollLink, scroller } from 'react-scroll';
-import translations from '../assets/languages/translations.json';
 import { FormControl, MenuItem, Select } from '@mui/material';
 import { useLanguage } from './LanguageContext';
 import '../styles/Header.css';
@@ -17,11 +16,7 @@ function Header() {
     };
 
     const handleNavigation = (section) => {
-        if (location.pathname !== '/') {
-            navigate('/', { state: { section } });
-        } else {
-            scrollToSection(section);
-        }
+        location.pathname !== '/' && navigate('/', { state: { section } });
     };
 
     const scrollToSection = (section) => {
@@ -58,7 +53,7 @@ function Header() {
                         offset={-100}
                         duration={500}
                         onClick={() => handleNavigation('home')}
-                    >{translations[language].home}</ScrollLink>
+                    >HOME</ScrollLink>
 
                     <ScrollLink
                         activeClass='active'
@@ -68,7 +63,7 @@ function Header() {
                         offset={-100}
                         duration={500}
                         onClick={() => handleNavigation('skillset')}
-                    >{translations[language].skills}</ScrollLink>
+                    >SKILLS</ScrollLink>
 
                     <ScrollLink
                         activeClass='active'
@@ -78,7 +73,7 @@ function Header() {
                         offset={-100}
                         duration={500}
                         onClick={() => handleNavigation('project')}
-                    >{translations[language].projects}</ScrollLink>
+                    >PROJECTS</ScrollLink>
 
                     <ScrollLink
                         activeClass='active'
@@ -88,7 +83,7 @@ function Header() {
                         offset={-100}
                         duration={500}
                         onClick={() => handleNavigation('about')}
-                    >{translations[language].about}</ScrollLink>
+                    >ABOUT</ScrollLink>
                 </ul>
             </div>
             <div className="headerLanguage">

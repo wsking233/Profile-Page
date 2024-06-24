@@ -10,16 +10,26 @@ function Project() {
 
     return (
         <section id='project' className='projectContainer'>
-              <div className='maxContainer innerStyle'>
-                 <h2>{translations[language].my_projects}</h2>
-                    <h3>Freejoas:</h3>
-                    <a href='/freejoas'>
-                        <img src={FreejoasCover} alt='Freejoas Cover' ></img>
-                    </a>
-                    <h3>Boys Night:</h3>
-                    <a href='/boysnight'>
-                        <img src={BoysNightCover} alt='Boys Night Cover'></img>
-                    </a>
+            <div className='maxContainer innerStyle'>
+                <h2>{translations[language].my_projects}</h2>
+                <div className='projectHolder'>
+                    <div className='projectImageHolder'>
+                        <a href='/freejoas'>
+                            <div className='projectContent'>
+                                <img src={FreejoasCover} alt='Freejoas Cover'></img>
+                                <h3>Freejoas</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div className='projectImageHolder'>
+                        <a href='/boysnight'>
+                            <div className='projectContent'>
+                                <img src={BoysNightCover} alt='Boys Night Cover'></img>
+                                <h3>Boys Night</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
 
         </section>

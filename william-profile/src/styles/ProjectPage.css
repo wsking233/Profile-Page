@@ -4,7 +4,11 @@
     flex-wrap: wrap;
     padding: 32px 16px;
     margin-top: var(--header-height);
-    /* margin-bottom: var(--footer-height); */
+    background-color: var(--background-color2);
+}
+
+.imageContainer{
+    margin-bottom: 32px;
 }
 
 .imgHolder{
@@ -16,16 +20,17 @@
 
 p{
     text-align: left;
+    padding-left: 16px;
 }
 
 h2{
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 400;
     margin: 16px 0;
 }
 
 h3{
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 500;
     margin: 8px 0;
 }
@@ -33,32 +38,34 @@ h3{
 p, li{
     font-size: 1.2rem;
     font-weight: 400;
-    line-height: 1.2;
+    line-height: 1.5;
+    margin: 8px 0;
+    padding: auto;
 }
 
-.creationContainer{
+
+ul{
+    padding: 0 48px;
+    list-style-type: square;
+}
+
+.overviewDetails, .featuresContainer{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 8px 16px;
     gap: 32px;
+    justify-content: center;
 }
 
- .creationLeft{
-   flex:1;
+.overviewDetailsLeft{
+    flex: 1.8;
 }
 
-.creationRight{
-    flex: 0.5;
+.overviewDetailsRight, .featuresLeft ,.featuresRight{
+    flex: 1;
 }
 
 .technicalContainer{
     display: flex;
     flex-direction: column;
-    padding: 8px 16px;
-}
-
-ul{
-    padding: 0 16px;
-    list-style-type: square;
+    padding: 8px 0;
 }
